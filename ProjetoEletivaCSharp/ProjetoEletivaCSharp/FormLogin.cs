@@ -17,6 +17,20 @@ namespace ProjetoEletivaCSharp
             InitializeComponent();
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtLogin.Text == "admin" && txtSenha.Text == "admin")
+            {
+                MessageBox.Show("Logado com Sucesso");
+                this.Hide();
+                FormMain form_main = new FormMain();
+                form_main.Show();
 
+            }
+            else
+            {
+                MessageBox.Show("Credenciais Incorretas!!!");
+            }
+        }
     }
 }
