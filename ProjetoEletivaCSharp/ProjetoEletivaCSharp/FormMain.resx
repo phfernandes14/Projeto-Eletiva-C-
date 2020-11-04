@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="labelTxtBemVindo.Text" xml:space="preserve">
+    <value>Seja bem ao Super Posto 2000. O sistema desenvolvido por Corona Clã Group Ltda. com um objetivo de levar você um sistema confiavel e que atenda todas as nessecidades de seu posto de combustivel.
+A nossa equipe conta com expecialistas de diversas areas que se juntaram para trazer ao mercado o melhor sistema de todos.</value>
+  </data>
 </root>
