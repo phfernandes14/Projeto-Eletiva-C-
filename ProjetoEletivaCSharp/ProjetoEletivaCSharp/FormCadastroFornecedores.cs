@@ -21,5 +21,10 @@ namespace ProjetoEletivaCSharp
         {
 
         }
+
+        private void bttnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

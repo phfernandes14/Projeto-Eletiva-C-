@@ -121,6 +121,7 @@
             this.iconButton2.TabIndex = 3;
             this.iconButton2.Text = "  Adicionar Fornecedor";
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButtonAdicionarProduto
             // 
@@ -163,6 +164,7 @@
             this.iconButtonHome.Text = "    Inicio";
             this.iconButtonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonHome.UseVisualStyleBackColor = true;
+            this.iconButtonHome.Click += new System.EventHandler(this.iconButtonHome_Click);
             // 
             // iconPictureBox1
             // 
