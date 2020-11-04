@@ -119,7 +119,7 @@
             // btn_cadastrar
             // 
             this.btn_cadastrar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastrar.Location = new System.Drawing.Point(310, 55);
+            this.btn_cadastrar.Location = new System.Drawing.Point(303, 62);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(95, 42);
             this.btn_cadastrar.TabIndex = 8;
@@ -129,9 +129,9 @@
             // btn_limpar
             // 
             this.btn_limpar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpar.Location = new System.Drawing.Point(321, 136);
+            this.btn_limpar.Location = new System.Drawing.Point(303, 121);
             this.btn_limpar.Name = "btn_limpar";
-            this.btn_limpar.Size = new System.Drawing.Size(74, 42);
+            this.btn_limpar.Size = new System.Drawing.Size(95, 42);
             this.btn_limpar.TabIndex = 9;
             this.btn_limpar.Text = "Limpar";
             this.btn_limpar.UseVisualStyleBackColor = true;
