@@ -1,6 +1,6 @@
 ﻿namespace ProjetoEletivaCSharp
 {
-    partial class FormCadastroCliente
+    partial class FormCadastroFornecedores
     {
         /// <summary>
         /// Required designer variable.
@@ -55,66 +55,66 @@
             // labelCNPJ
             // 
             this.labelCNPJ.AutoSize = true;
-            this.labelCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCNPJ.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
             this.labelCNPJ.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelCNPJ.Location = new System.Drawing.Point(13, 79);
+            this.labelCNPJ.Location = new System.Drawing.Point(12, 31);
             this.labelCNPJ.Name = "labelCNPJ";
-            this.labelCNPJ.Size = new System.Drawing.Size(43, 16);
+            this.labelCNPJ.Size = new System.Drawing.Size(52, 19);
             this.labelCNPJ.TabIndex = 1;
             this.labelCNPJ.Text = "CNPJ";
             // 
             // labelRazao
             // 
             this.labelRazao.AutoSize = true;
-            this.labelRazao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRazao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
             this.labelRazao.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelRazao.Location = new System.Drawing.Point(13, 116);
+            this.labelRazao.Location = new System.Drawing.Point(12, 63);
             this.labelRazao.Name = "labelRazao";
-            this.labelRazao.Size = new System.Drawing.Size(89, 16);
+            this.labelRazao.Size = new System.Drawing.Size(104, 19);
             this.labelRazao.TabIndex = 2;
             this.labelRazao.Text = "Razão Social";
             // 
             // labelInsEstadual
             // 
             this.labelInsEstadual.AutoSize = true;
-            this.labelInsEstadual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInsEstadual.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
             this.labelInsEstadual.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelInsEstadual.Location = new System.Drawing.Point(13, 152);
+            this.labelInsEstadual.Location = new System.Drawing.Point(11, 98);
             this.labelInsEstadual.Name = "labelInsEstadual";
-            this.labelInsEstadual.Size = new System.Drawing.Size(118, 16);
+            this.labelInsEstadual.Size = new System.Drawing.Size(140, 19);
             this.labelInsEstadual.TabIndex = 3;
             this.labelInsEstadual.Text = "Inscrição Estadual";
             // 
             // labelInsMunicipal
             // 
             this.labelInsMunicipal.AutoSize = true;
-            this.labelInsMunicipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInsMunicipal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
             this.labelInsMunicipal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelInsMunicipal.Location = new System.Drawing.Point(13, 188);
+            this.labelInsMunicipal.Location = new System.Drawing.Point(12, 134);
             this.labelInsMunicipal.Name = "labelInsMunicipal";
-            this.labelInsMunicipal.Size = new System.Drawing.Size(122, 16);
+            this.labelInsMunicipal.Size = new System.Drawing.Size(147, 19);
             this.labelInsMunicipal.TabIndex = 4;
             this.labelInsMunicipal.Text = "Inscrição Municipal";
             // 
             // labelNatureza
             // 
             this.labelNatureza.AutoSize = true;
-            this.labelNatureza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNatureza.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
             this.labelNatureza.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelNatureza.Location = new System.Drawing.Point(13, 222);
+            this.labelNatureza.Location = new System.Drawing.Point(12, 168);
             this.labelNatureza.Name = "labelNatureza";
-            this.labelNatureza.Size = new System.Drawing.Size(112, 16);
+            this.labelNatureza.Size = new System.Drawing.Size(133, 19);
             this.labelNatureza.TabIndex = 5;
             this.labelNatureza.Text = "Natureza Juridica";
             // 
             // labelEndereço
             // 
             this.labelEndereço.AutoSize = true;
-            this.labelEndereço.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEndereço.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
             this.labelEndereço.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelEndereço.Location = new System.Drawing.Point(13, 286);
+            this.labelEndereço.Location = new System.Drawing.Point(11, 238);
             this.labelEndereço.Name = "labelEndereço";
-            this.labelEndereço.Size = new System.Drawing.Size(67, 16);
+            this.labelEndereço.Size = new System.Drawing.Size(78, 19);
             this.labelEndereço.TabIndex = 6;
             this.labelEndereço.Text = "Endereço";
             // 
@@ -141,68 +141,68 @@
             // labelRamo
             // 
             this.labelRamo.AutoSize = true;
-            this.labelRamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRamo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
             this.labelRamo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelRamo.Location = new System.Drawing.Point(13, 254);
+            this.labelRamo.Location = new System.Drawing.Point(11, 203);
             this.labelRamo.Name = "labelRamo";
-            this.labelRamo.Size = new System.Drawing.Size(119, 16);
+            this.labelRamo.Size = new System.Drawing.Size(139, 19);
             this.labelRamo.TabIndex = 9;
             this.labelRamo.Text = "Ramo de Negocio";
             // 
             // txtCNPJ
             // 
-            this.txtCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCNPJ.Location = new System.Drawing.Point(139, 79);
+            this.txtCNPJ.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtCNPJ.Location = new System.Drawing.Point(165, 28);
             this.txtCNPJ.Name = "txtCNPJ";
-            this.txtCNPJ.Size = new System.Drawing.Size(219, 22);
+            this.txtCNPJ.Size = new System.Drawing.Size(219, 26);
             this.txtCNPJ.TabIndex = 10;
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEndereco.Location = new System.Drawing.Point(139, 286);
+            this.txtEndereco.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtEndereco.Location = new System.Drawing.Point(165, 235);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(219, 22);
+            this.txtEndereco.Size = new System.Drawing.Size(219, 26);
             this.txtEndereco.TabIndex = 11;
             // 
             // txtRamo
             // 
-            this.txtRamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRamo.Location = new System.Drawing.Point(139, 254);
+            this.txtRamo.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtRamo.Location = new System.Drawing.Point(165, 200);
             this.txtRamo.Name = "txtRamo";
-            this.txtRamo.Size = new System.Drawing.Size(219, 22);
+            this.txtRamo.Size = new System.Drawing.Size(219, 26);
             this.txtRamo.TabIndex = 12;
             // 
             // txtNatureza
             // 
-            this.txtNatureza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNatureza.Location = new System.Drawing.Point(139, 222);
+            this.txtNatureza.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtNatureza.Location = new System.Drawing.Point(165, 165);
             this.txtNatureza.Name = "txtNatureza";
-            this.txtNatureza.Size = new System.Drawing.Size(219, 22);
+            this.txtNatureza.Size = new System.Drawing.Size(219, 26);
             this.txtNatureza.TabIndex = 13;
             // 
             // txtInsMunicipal
             // 
-            this.txtInsMunicipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInsMunicipal.Location = new System.Drawing.Point(139, 186);
+            this.txtInsMunicipal.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtInsMunicipal.Location = new System.Drawing.Point(165, 131);
             this.txtInsMunicipal.Name = "txtInsMunicipal";
-            this.txtInsMunicipal.Size = new System.Drawing.Size(219, 22);
+            this.txtInsMunicipal.Size = new System.Drawing.Size(219, 26);
             this.txtInsMunicipal.TabIndex = 14;
             // 
             // txtInsEstadual
             // 
-            this.txtInsEstadual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInsEstadual.Location = new System.Drawing.Point(139, 149);
+            this.txtInsEstadual.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtInsEstadual.Location = new System.Drawing.Point(165, 95);
             this.txtInsEstadual.Name = "txtInsEstadual";
-            this.txtInsEstadual.Size = new System.Drawing.Size(219, 22);
+            this.txtInsEstadual.Size = new System.Drawing.Size(219, 26);
             this.txtInsEstadual.TabIndex = 15;
             // 
             // txtRazao
             // 
-            this.txtRazao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRazao.Location = new System.Drawing.Point(139, 113);
+            this.txtRazao.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtRazao.Location = new System.Drawing.Point(165, 60);
             this.txtRazao.Name = "txtRazao";
-            this.txtRazao.Size = new System.Drawing.Size(219, 22);
+            this.txtRazao.Size = new System.Drawing.Size(219, 26);
             this.txtRazao.TabIndex = 16;
             // 
             // txtTelefone
@@ -221,7 +221,7 @@
             // 
             // bttnCadastrar
             // 
-            this.bttnCadastrar.Location = new System.Drawing.Point(423, 92);
+            this.bttnCadastrar.Location = new System.Drawing.Point(424, 56);
             this.bttnCadastrar.Name = "bttnCadastrar";
             this.bttnCadastrar.Size = new System.Drawing.Size(125, 58);
             this.bttnCadastrar.TabIndex = 19;
@@ -230,7 +230,7 @@
             // 
             // bttnLimpar
             // 
-            this.bttnLimpar.Location = new System.Drawing.Point(423, 211);
+            this.bttnLimpar.Location = new System.Drawing.Point(424, 177);
             this.bttnLimpar.Name = "bttnLimpar";
             this.bttnLimpar.Size = new System.Drawing.Size(125, 56);
             this.bttnLimpar.TabIndex = 20;
@@ -256,16 +256,16 @@
             this.groupBoxCadastroFornecedores.Controls.Add(this.txtCNPJ);
             this.groupBoxCadastroFornecedores.Controls.Add(this.txtRamo);
             this.groupBoxCadastroFornecedores.Controls.Add(this.txtEndereco);
-            this.groupBoxCadastroFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCadastroFornecedores.Location = new System.Drawing.Point(88, 28);
+            this.groupBoxCadastroFornecedores.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold);
+            this.groupBoxCadastroFornecedores.Location = new System.Drawing.Point(91, 36);
             this.groupBoxCadastroFornecedores.Name = "groupBoxCadastroFornecedores";
-            this.groupBoxCadastroFornecedores.Size = new System.Drawing.Size(616, 369);
+            this.groupBoxCadastroFornecedores.Size = new System.Drawing.Size(579, 276);
             this.groupBoxCadastroFornecedores.TabIndex = 21;
             this.groupBoxCadastroFornecedores.TabStop = false;
             this.groupBoxCadastroFornecedores.Text = "Cadastro de Fornecedores";
             this.groupBoxCadastroFornecedores.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // FormCadastroCliente
+            // FormCadastroFornecedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -276,7 +276,7 @@
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelTelefone);
-            this.Name = "FormCadastroCliente";
+            this.Name = "FormCadastroFornecedores";
             this.Text = "FormCadastroCliente";
             this.groupBoxCadastroFornecedores.ResumeLayout(false);
             this.groupBoxCadastroFornecedores.PerformLayout();
