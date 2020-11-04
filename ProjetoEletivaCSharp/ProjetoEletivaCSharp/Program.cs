@@ -16,7 +16,7 @@ namespace ProjetoEletivaCSharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCadastroProduto());
+            Application.Run(new Login());
         }
     }
 }
