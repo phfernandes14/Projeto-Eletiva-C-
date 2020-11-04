@@ -136,9 +136,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BD_Posto.mdf" />
-    <Content Include="BD_Posto_log.ldf">
-      <DependentUpon>BD_Posto.mdf</DependentUpon>
+    <Content Include="Posto.mdf" />
+    <Content Include="Posto_log.ldf">
+      <DependentUpon>Posto.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
