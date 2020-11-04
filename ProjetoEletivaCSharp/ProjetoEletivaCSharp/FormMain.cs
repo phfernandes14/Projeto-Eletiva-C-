@@ -36,7 +36,7 @@ namespace ProjetoEletivaCSharp
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-
+            openChildForm( new FormRegistroVenda());
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
@@ -54,6 +54,11 @@ namespace ProjetoEletivaCSharp
             {
                 panelSubMenu.Visible = true;
             }
+        }
+
+        private void iconButtonAdicionarProduto_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormCadastroProduto());
         }
     }
 }
