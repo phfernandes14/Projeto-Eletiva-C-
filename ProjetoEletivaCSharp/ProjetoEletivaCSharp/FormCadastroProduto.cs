@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoEletivaCSharp
 {
-    public partial class Vendas : Form
+    public partial class FormCadastroProduto : Form
     {
-        public Vendas()
+        public FormCadastroProduto()
         {
             InitializeComponent();
         }

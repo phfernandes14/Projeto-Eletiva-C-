@@ -1,6 +1,6 @@
 ﻿namespace ProjetoEletivaCSharp
 {
-    partial class Vendas
+    partial class FormCadastroProduto
     {
         /// <summary>
         /// Required designer variable.
@@ -157,15 +157,15 @@
             this.groupBox_cadastro_produto.TabStop = false;
             this.groupBox_cadastro_produto.Text = "Cadastro de Produto";
             // 
-            // Vendas
+            // FormCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(451, 235);
             this.Controls.Add(this.groupBox_cadastro_produto);
-            this.Name = "Vendas";
-            this.Text = "Vendas";
+            this.Name = "FormCadastroProduto";
+            this.Text = "Cadastro de Produto";
             this.groupBox_cadastro_produto.ResumeLayout(false);
             this.groupBox_cadastro_produto.PerformLayout();
             this.ResumeLayout(false);
