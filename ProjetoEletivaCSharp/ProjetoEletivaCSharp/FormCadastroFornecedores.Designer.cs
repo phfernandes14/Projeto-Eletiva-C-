@@ -1,6 +1,6 @@
 ﻿namespace ProjetoEletivaCSharp
 {
-    partial class FormCadastroCliente
+    partial class FormCadastroFornecedores
     {
         /// <summary>
         /// Required designer variable.
