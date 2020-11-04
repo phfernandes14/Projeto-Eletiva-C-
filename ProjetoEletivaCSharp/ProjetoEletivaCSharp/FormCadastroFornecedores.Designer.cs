@@ -239,7 +239,7 @@
             // 
             // groupBoxCadastroFornecedores
             // 
-            this.groupBoxCadastroFornecedores.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxCadastroFornecedores.BackColor = System.Drawing.SystemColors.Window;
             this.groupBoxCadastroFornecedores.Controls.Add(this.bttnLimpar);
             this.groupBoxCadastroFornecedores.Controls.Add(this.labelCNPJ);
             this.groupBoxCadastroFornecedores.Controls.Add(this.bttnCadastrar);
@@ -257,7 +257,7 @@
             this.groupBoxCadastroFornecedores.Controls.Add(this.txtRamo);
             this.groupBoxCadastroFornecedores.Controls.Add(this.txtEndereco);
             this.groupBoxCadastroFornecedores.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold);
-            this.groupBoxCadastroFornecedores.Location = new System.Drawing.Point(91, 36);
+            this.groupBoxCadastroFornecedores.Location = new System.Drawing.Point(12, 12);
             this.groupBoxCadastroFornecedores.Name = "groupBoxCadastroFornecedores";
             this.groupBoxCadastroFornecedores.Size = new System.Drawing.Size(579, 276);
             this.groupBoxCadastroFornecedores.TabIndex = 21;
@@ -269,8 +269,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(800, 443);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(603, 301);
             this.Controls.Add(this.groupBoxCadastroFornecedores);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTelefone);

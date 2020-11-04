@@ -150,7 +150,7 @@
             this.groupBox_cadastro_produto.Controls.Add(this.lbl_quantidade);
             this.groupBox_cadastro_produto.Controls.Add(this.txt_item);
             this.groupBox_cadastro_produto.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_cadastro_produto.Location = new System.Drawing.Point(200, 67);
+            this.groupBox_cadastro_produto.Location = new System.Drawing.Point(12, 12);
             this.groupBox_cadastro_produto.Name = "groupBox_cadastro_produto";
             this.groupBox_cadastro_produto.Size = new System.Drawing.Size(426, 209);
             this.groupBox_cadastro_produto.TabIndex = 10;
@@ -162,7 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(451, 235);
             this.Controls.Add(this.groupBox_cadastro_produto);
             this.Name = "Vendas";
             this.Text = "Vendas";
