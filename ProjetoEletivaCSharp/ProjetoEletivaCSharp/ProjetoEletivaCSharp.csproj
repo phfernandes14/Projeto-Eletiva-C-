@@ -132,11 +132,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BD_Posto.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="BD_Posto.mdf" />
     <Content Include="BD_Posto_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BD_Posto.mdf</DependentUpon>
     </Content>
   </ItemGroup>
