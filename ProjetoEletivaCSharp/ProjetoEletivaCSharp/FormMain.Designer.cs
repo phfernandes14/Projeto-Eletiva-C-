@@ -30,26 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelSubMenu = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButtonAdicionarProduto = new FontAwesome.Sharp.IconButton();
+            this.iconButtonHome = new FontAwesome.Sharp.IconButton();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButtonAdministrador = new FontAwesome.Sharp.IconButton();
             this.iconButtonRelatorio = new FontAwesome.Sharp.IconButton();
             this.iconButtonVenda = new FontAwesome.Sharp.IconButton();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.labelBemVindo = new System.Windows.Forms.Label();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.flowLayoutPanelTxtBemvindo = new System.Windows.Forms.FlowLayoutPanel();
             this.labelTxtBemVindo = new System.Windows.Forms.Label();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconButtonHome = new FontAwesome.Sharp.IconButton();
-            this.panelSubMenu = new System.Windows.Forms.Panel();
-            this.iconButtonAdicionarProduto = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.labelBemVindo = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
-            this.panelChildForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            this.flowLayoutPanelTxtBemvindo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panelSubMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            this.flowLayoutPanelTxtBemvindo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -67,6 +67,116 @@
             this.panelMenu.Size = new System.Drawing.Size(180, 568);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // panelSubMenu
+            // 
+            this.panelSubMenu.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panelSubMenu.Controls.Add(this.iconButton3);
+            this.panelSubMenu.Controls.Add(this.iconButton2);
+            this.panelSubMenu.Controls.Add(this.iconButtonAdicionarProduto);
+            this.panelSubMenu.Location = new System.Drawing.Point(0, 353);
+            this.panelSubMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.panelSubMenu.Name = "panelSubMenu";
+            this.panelSubMenu.Size = new System.Drawing.Size(180, 94);
+            this.panelSubMenu.TabIndex = 4;
+            this.panelSubMenu.Visible = false;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton3.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 22;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(12, 56);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Rotation = 0D;
+            this.iconButton3.Size = new System.Drawing.Size(168, 28);
+            this.iconButton3.TabIndex = 4;
+            this.iconButton3.Text = "    Editar Preço";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton2.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 22;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(12, 28);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Rotation = 0D;
+            this.iconButton2.Size = new System.Drawing.Size(168, 28);
+            this.iconButton2.TabIndex = 3;
+            this.iconButton2.Text = "  Adicionar Fornecedor";
+            this.iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // iconButtonAdicionarProduto
+            // 
+            this.iconButtonAdicionarProduto.FlatAppearance.BorderSize = 0;
+            this.iconButtonAdicionarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonAdicionarProduto.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonAdicionarProduto.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonAdicionarProduto.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
+            this.iconButtonAdicionarProduto.IconColor = System.Drawing.Color.Black;
+            this.iconButtonAdicionarProduto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonAdicionarProduto.IconSize = 22;
+            this.iconButtonAdicionarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonAdicionarProduto.Location = new System.Drawing.Point(12, 0);
+            this.iconButtonAdicionarProduto.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButtonAdicionarProduto.Name = "iconButtonAdicionarProduto";
+            this.iconButtonAdicionarProduto.Rotation = 0D;
+            this.iconButtonAdicionarProduto.Size = new System.Drawing.Size(168, 28);
+            this.iconButtonAdicionarProduto.TabIndex = 0;
+            this.iconButtonAdicionarProduto.Text = "Adicionar Produto";
+            this.iconButtonAdicionarProduto.UseVisualStyleBackColor = true;
+            this.iconButtonAdicionarProduto.Click += new System.EventHandler(this.iconButtonAdicionarProduto_Click);
+            // 
+            // iconButtonHome
+            // 
+            this.iconButtonHome.FlatAppearance.BorderSize = 0;
+            this.iconButtonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonHome.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonHome.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonHome.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconButtonHome.IconColor = System.Drawing.Color.Black;
+            this.iconButtonHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonHome.IconSize = 25;
+            this.iconButtonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonHome.Location = new System.Drawing.Point(0, 212);
+            this.iconButtonHome.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButtonHome.Name = "iconButtonHome";
+            this.iconButtonHome.Rotation = 0D;
+            this.iconButtonHome.Size = new System.Drawing.Size(180, 35);
+            this.iconButtonHome.TabIndex = 3;
+            this.iconButtonHome.Text = "    Inicio";
+            this.iconButtonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonHome.UseVisualStyleBackColor = true;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.GasPump;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 67;
+            this.iconPictureBox1.Location = new System.Drawing.Point(54, 33);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(67, 76);
+            this.iconPictureBox1.TabIndex = 3;
+            this.iconPictureBox1.TabStop = false;
             // 
             // iconButtonAdministrador
             // 
@@ -143,29 +253,19 @@
             this.panelChildForm.Size = new System.Drawing.Size(737, 568);
             this.panelChildForm.TabIndex = 1;
             // 
-            // iconPictureBox1
+            // iconPictureBox2
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.GasPump;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 67;
-            this.iconPictureBox1.Location = new System.Drawing.Point(54, 33);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(67, 76);
-            this.iconPictureBox1.TabIndex = 3;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // labelBemVindo
-            // 
-            this.labelBemVindo.AutoSize = true;
-            this.labelBemVindo.Font = new System.Drawing.Font("Segoe Print", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBemVindo.Location = new System.Drawing.Point(220, 63);
-            this.labelBemVindo.Name = "labelBemVindo";
-            this.labelBemVindo.Size = new System.Drawing.Size(254, 70);
-            this.labelBemVindo.TabIndex = 0;
-            this.labelBemVindo.Text = "Bem Vindo";
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Car;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 56;
+            this.iconPictureBox2.Location = new System.Drawing.Point(157, 77);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(57, 56);
+            this.iconPictureBox2.TabIndex = 2;
+            this.iconPictureBox2.TabStop = false;
             // 
             // flowLayoutPanelTxtBemvindo
             // 
@@ -185,110 +285,15 @@
             this.labelTxtBemVindo.TabIndex = 0;
             this.labelTxtBemVindo.Text = resources.GetString("labelTxtBemVindo.Text");
             // 
-            // iconPictureBox2
+            // labelBemVindo
             // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Car;
-            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 56;
-            this.iconPictureBox2.Location = new System.Drawing.Point(157, 77);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(57, 56);
-            this.iconPictureBox2.TabIndex = 2;
-            this.iconPictureBox2.TabStop = false;
-            // 
-            // iconButtonHome
-            // 
-            this.iconButtonHome.FlatAppearance.BorderSize = 0;
-            this.iconButtonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonHome.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButtonHome.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonHome.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButtonHome.IconColor = System.Drawing.Color.Black;
-            this.iconButtonHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonHome.IconSize = 25;
-            this.iconButtonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonHome.Location = new System.Drawing.Point(0, 212);
-            this.iconButtonHome.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButtonHome.Name = "iconButtonHome";
-            this.iconButtonHome.Rotation = 0D;
-            this.iconButtonHome.Size = new System.Drawing.Size(180, 35);
-            this.iconButtonHome.TabIndex = 3;
-            this.iconButtonHome.Text = "    Inicio";
-            this.iconButtonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonHome.UseVisualStyleBackColor = true;
-            // 
-            // panelSubMenu
-            // 
-            this.panelSubMenu.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panelSubMenu.Controls.Add(this.iconButton3);
-            this.panelSubMenu.Controls.Add(this.iconButton2);
-            this.panelSubMenu.Controls.Add(this.iconButtonAdicionarProduto);
-            this.panelSubMenu.Location = new System.Drawing.Point(0, 353);
-            this.panelSubMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.panelSubMenu.Name = "panelSubMenu";
-            this.panelSubMenu.Size = new System.Drawing.Size(180, 94);
-            this.panelSubMenu.TabIndex = 4;
-            this.panelSubMenu.Visible = false;
-            // 
-            // iconButtonAdicionarProduto
-            // 
-            this.iconButtonAdicionarProduto.FlatAppearance.BorderSize = 0;
-            this.iconButtonAdicionarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonAdicionarProduto.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButtonAdicionarProduto.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
-            this.iconButtonAdicionarProduto.IconColor = System.Drawing.Color.Black;
-            this.iconButtonAdicionarProduto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonAdicionarProduto.IconSize = 22;
-            this.iconButtonAdicionarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonAdicionarProduto.Location = new System.Drawing.Point(12, 0);
-            this.iconButtonAdicionarProduto.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButtonAdicionarProduto.Name = "iconButtonAdicionarProduto";
-            this.iconButtonAdicionarProduto.Rotation = 0D;
-            this.iconButtonAdicionarProduto.Size = new System.Drawing.Size(168, 28);
-            this.iconButtonAdicionarProduto.TabIndex = 0;
-            this.iconButtonAdicionarProduto.Text = "Adicionar Produto";
-            this.iconButtonAdicionarProduto.UseVisualStyleBackColor = true;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 22;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(12, 28);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Rotation = 0D;
-            this.iconButton2.Size = new System.Drawing.Size(168, 28);
-            this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "Adicionar Fornecedor";
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 22;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(12, 56);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(168, 28);
-            this.iconButton3.TabIndex = 4;
-            this.iconButton3.Text = "Editar Preço";
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.labelBemVindo.AutoSize = true;
+            this.labelBemVindo.Font = new System.Drawing.Font("Segoe Print", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBemVindo.Location = new System.Drawing.Point(220, 63);
+            this.labelBemVindo.Name = "labelBemVindo";
+            this.labelBemVindo.Size = new System.Drawing.Size(254, 70);
+            this.labelBemVindo.TabIndex = 0;
+            this.labelBemVindo.Text = "Bem Vindo";
             // 
             // FormMain
             // 
@@ -301,13 +306,13 @@
             this.Name = "FormMain";
             this.Text = "Tela Principal";
             this.panelMenu.ResumeLayout(false);
+            this.panelSubMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.flowLayoutPanelTxtBemvindo.ResumeLayout(false);
             this.flowLayoutPanelTxtBemvindo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            this.panelSubMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
