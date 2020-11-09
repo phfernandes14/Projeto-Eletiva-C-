@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace ProjetoEletivaCSharp
 {
-    public partial class FormRegistroVenda : Form
+    public partial class FormEditarProduto : Form
     {
-        public FormRegistroVenda()
+        public FormEditarProduto()
         {
             InitializeComponent();
         }
 
-        private void FormRegistroVenda_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void bttnLimpar_Click(object sender, EventArgs e)
         {
-            limparCampos();
-        }
-
-        private void limparCampos()
-        {
-            txtItem.Clear();
-            txtQuantidade.Clear();
-            txtPago.Clear();
+            txtNome.Clear();
+            txtValorCompra.Clear();
+            txtValorVenda.Clear();
         }
     }
 }

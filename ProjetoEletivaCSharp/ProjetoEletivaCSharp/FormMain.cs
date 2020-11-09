@@ -58,7 +58,7 @@ namespace ProjetoEletivaCSharp
 
         private void iconButtonAdicionarProduto_Click(object sender, EventArgs e)
         {
-           // openChildForm(new FormCadastroProduto());
+           openChildForm(new FormAdicionarProduto());
         }
 
         private void iconButtonHome_Click(object sender, EventArgs e)
@@ -72,6 +72,16 @@ namespace ProjetoEletivaCSharp
         private void iconButton2_Click(object sender, EventArgs e)
         {
             openChildForm(new FormCadastroFornecedores());
+        }
+
+        private void iconButtonEditarPreco_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormEditarProduto());
+        }
+
+        private void iconButtonEditarFornecedor_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormEditarFornecedor());
         }
     }
 }

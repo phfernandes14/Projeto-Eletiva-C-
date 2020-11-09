@@ -31,9 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelSubMenu = new System.Windows.Forms.Panel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButtonAdicionarProduto = new FontAwesome.Sharp.IconButton();
+            this.iconButtonEditarFornecedor = new FontAwesome.Sharp.IconButton();
+            this.iconButtonEditarPreco = new FontAwesome.Sharp.IconButton();
+            this.iconButtonCasdastrarFornecedor = new FontAwesome.Sharp.IconButton();
+            this.iconButtonCadastarProduto = new FontAwesome.Sharp.IconButton();
             this.iconButtonHome = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButtonAdministrador = new FontAwesome.Sharp.IconButton();
@@ -71,78 +72,102 @@
             // panelSubMenu
             // 
             this.panelSubMenu.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panelSubMenu.Controls.Add(this.iconButton3);
-            this.panelSubMenu.Controls.Add(this.iconButton2);
-            this.panelSubMenu.Controls.Add(this.iconButtonAdicionarProduto);
+            this.panelSubMenu.Controls.Add(this.iconButtonEditarFornecedor);
+            this.panelSubMenu.Controls.Add(this.iconButtonEditarPreco);
+            this.panelSubMenu.Controls.Add(this.iconButtonCasdastrarFornecedor);
+            this.panelSubMenu.Controls.Add(this.iconButtonCadastarProduto);
             this.panelSubMenu.Location = new System.Drawing.Point(0, 353);
             this.panelSubMenu.Margin = new System.Windows.Forms.Padding(0);
             this.panelSubMenu.Name = "panelSubMenu";
-            this.panelSubMenu.Size = new System.Drawing.Size(180, 94);
+            this.panelSubMenu.Size = new System.Drawing.Size(180, 131);
             this.panelSubMenu.TabIndex = 4;
             this.panelSubMenu.Visible = false;
             // 
-            // iconButton3
+            // iconButtonEditarFornecedor
             // 
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton3.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 22;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(12, 56);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(168, 28);
-            this.iconButton3.TabIndex = 4;
-            this.iconButton3.Text = "    Editar Preço";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButtonEditarFornecedor.FlatAppearance.BorderSize = 0;
+            this.iconButtonEditarFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonEditarFornecedor.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonEditarFornecedor.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonEditarFornecedor.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.iconButtonEditarFornecedor.IconColor = System.Drawing.Color.Black;
+            this.iconButtonEditarFornecedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonEditarFornecedor.IconSize = 22;
+            this.iconButtonEditarFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonEditarFornecedor.Location = new System.Drawing.Point(12, 84);
+            this.iconButtonEditarFornecedor.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButtonEditarFornecedor.Name = "iconButtonEditarFornecedor";
+            this.iconButtonEditarFornecedor.Rotation = 0D;
+            this.iconButtonEditarFornecedor.Size = new System.Drawing.Size(168, 28);
+            this.iconButtonEditarFornecedor.TabIndex = 5;
+            this.iconButtonEditarFornecedor.Text = "    Editar Fornecedor";
+            this.iconButtonEditarFornecedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonEditarFornecedor.UseVisualStyleBackColor = true;
+            this.iconButtonEditarFornecedor.Click += new System.EventHandler(this.iconButtonEditarFornecedor_Click);
             // 
-            // iconButton2
+            // iconButtonEditarPreco
             // 
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton2.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 22;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(12, 28);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Rotation = 0D;
-            this.iconButton2.Size = new System.Drawing.Size(168, 28);
-            this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "  Adicionar Fornecedor";
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.iconButtonEditarPreco.FlatAppearance.BorderSize = 0;
+            this.iconButtonEditarPreco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonEditarPreco.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonEditarPreco.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonEditarPreco.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.iconButtonEditarPreco.IconColor = System.Drawing.Color.Black;
+            this.iconButtonEditarPreco.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonEditarPreco.IconSize = 22;
+            this.iconButtonEditarPreco.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonEditarPreco.Location = new System.Drawing.Point(12, 56);
+            this.iconButtonEditarPreco.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButtonEditarPreco.Name = "iconButtonEditarPreco";
+            this.iconButtonEditarPreco.Rotation = 0D;
+            this.iconButtonEditarPreco.Size = new System.Drawing.Size(168, 28);
+            this.iconButtonEditarPreco.TabIndex = 4;
+            this.iconButtonEditarPreco.Text = "    Editar Preço";
+            this.iconButtonEditarPreco.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonEditarPreco.UseVisualStyleBackColor = true;
+            this.iconButtonEditarPreco.Click += new System.EventHandler(this.iconButtonEditarPreco_Click);
             // 
-            // iconButtonAdicionarProduto
+            // iconButtonCasdastrarFornecedor
             // 
-            this.iconButtonAdicionarProduto.FlatAppearance.BorderSize = 0;
-            this.iconButtonAdicionarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonAdicionarProduto.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButtonAdicionarProduto.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonAdicionarProduto.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
-            this.iconButtonAdicionarProduto.IconColor = System.Drawing.Color.Black;
-            this.iconButtonAdicionarProduto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonAdicionarProduto.IconSize = 22;
-            this.iconButtonAdicionarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonAdicionarProduto.Location = new System.Drawing.Point(12, 0);
-            this.iconButtonAdicionarProduto.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButtonAdicionarProduto.Name = "iconButtonAdicionarProduto";
-            this.iconButtonAdicionarProduto.Rotation = 0D;
-            this.iconButtonAdicionarProduto.Size = new System.Drawing.Size(168, 28);
-            this.iconButtonAdicionarProduto.TabIndex = 0;
-            this.iconButtonAdicionarProduto.Text = "Adicionar Produto";
-            this.iconButtonAdicionarProduto.UseVisualStyleBackColor = true;
-            this.iconButtonAdicionarProduto.Click += new System.EventHandler(this.iconButtonAdicionarProduto_Click);
+            this.iconButtonCasdastrarFornecedor.FlatAppearance.BorderSize = 0;
+            this.iconButtonCasdastrarFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonCasdastrarFornecedor.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonCasdastrarFornecedor.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonCasdastrarFornecedor.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButtonCasdastrarFornecedor.IconColor = System.Drawing.Color.Black;
+            this.iconButtonCasdastrarFornecedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonCasdastrarFornecedor.IconSize = 22;
+            this.iconButtonCasdastrarFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonCasdastrarFornecedor.Location = new System.Drawing.Point(12, 28);
+            this.iconButtonCasdastrarFornecedor.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButtonCasdastrarFornecedor.Name = "iconButtonCasdastrarFornecedor";
+            this.iconButtonCasdastrarFornecedor.Rotation = 0D;
+            this.iconButtonCasdastrarFornecedor.Size = new System.Drawing.Size(168, 28);
+            this.iconButtonCasdastrarFornecedor.TabIndex = 3;
+            this.iconButtonCasdastrarFornecedor.Text = "  Cadastrar Fornecedor";
+            this.iconButtonCasdastrarFornecedor.UseVisualStyleBackColor = true;
+            this.iconButtonCasdastrarFornecedor.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // iconButtonCadastarProduto
+            // 
+            this.iconButtonCadastarProduto.FlatAppearance.BorderSize = 0;
+            this.iconButtonCadastarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonCadastarProduto.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonCadastarProduto.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonCadastarProduto.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
+            this.iconButtonCadastarProduto.IconColor = System.Drawing.Color.Black;
+            this.iconButtonCadastarProduto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonCadastarProduto.IconSize = 22;
+            this.iconButtonCadastarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonCadastarProduto.Location = new System.Drawing.Point(12, 0);
+            this.iconButtonCadastarProduto.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButtonCadastarProduto.Name = "iconButtonCadastarProduto";
+            this.iconButtonCadastarProduto.Rotation = 0D;
+            this.iconButtonCadastarProduto.Size = new System.Drawing.Size(168, 28);
+            this.iconButtonCadastarProduto.TabIndex = 0;
+            this.iconButtonCadastarProduto.Text = "Cadastrar Produto";
+            this.iconButtonCadastarProduto.UseVisualStyleBackColor = true;
+            this.iconButtonCadastarProduto.Click += new System.EventHandler(this.iconButtonAdicionarProduto_Click);
             // 
             // iconButtonHome
             // 
@@ -333,8 +358,9 @@
         private System.Windows.Forms.Label labelBemVindo;
         private FontAwesome.Sharp.IconButton iconButtonHome;
         private System.Windows.Forms.Panel panelSubMenu;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButtonAdicionarProduto;
+        private FontAwesome.Sharp.IconButton iconButtonEditarPreco;
+        private FontAwesome.Sharp.IconButton iconButtonCasdastrarFornecedor;
+        private FontAwesome.Sharp.IconButton iconButtonCadastarProduto;
+        private FontAwesome.Sharp.IconButton iconButtonEditarFornecedor;
     }
 }

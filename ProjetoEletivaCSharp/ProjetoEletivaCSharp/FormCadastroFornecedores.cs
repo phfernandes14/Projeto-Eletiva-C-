@@ -26,5 +26,19 @@ namespace ProjetoEletivaCSharp
         {
 
         }
+
+        private void bttnLimpar_Click(object sender, EventArgs e)
+        {
+            txtCNPJ.Clear();
+            txtEmail.Clear();
+            txtEndereco.Clear();
+            txtInsEstadual.Clear();
+            txtInsMunicipal.Clear();
+            txtNatureza.Clear();
+            txtRamo.Clear();
+            txtRazao.Clear();
+            txtTelefone.Clear();
+            
+        }
     }
 }
