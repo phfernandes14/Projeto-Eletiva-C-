@@ -319,6 +319,7 @@
             this.bttnSalvar.TabIndex = 53;
             this.bttnSalvar.Text = "Salvar";
             this.bttnSalvar.UseVisualStyleBackColor = false;
+            this.bttnSalvar.Click += new System.EventHandler(this.bttnSalvar_Click);
             // 
             // comboBoxFornecedorEditar
             // 

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelSubMenu = new System.Windows.Forms.Panel();
             this.iconButtonEditarFornecedor = new FontAwesome.Sharp.IconButton();
             this.iconButtonEditarPreco = new FontAwesome.Sharp.IconButton();
@@ -56,6 +57,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelMenu.Controls.Add(this.iconButton1);
             this.panelMenu.Controls.Add(this.panelSubMenu);
             this.panelMenu.Controls.Add(this.iconButtonHome);
             this.panelMenu.Controls.Add(this.iconPictureBox1);
@@ -69,6 +71,28 @@
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ListAlt;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 25;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(0, 248);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(180, 35);
+            this.iconButton1.TabIndex = 5;
+            this.iconButton1.Text = "    Produtos";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
+            // 
             // panelSubMenu
             // 
             this.panelSubMenu.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -79,7 +103,7 @@
             this.panelSubMenu.Location = new System.Drawing.Point(0, 353);
             this.panelSubMenu.Margin = new System.Windows.Forms.Padding(0);
             this.panelSubMenu.Name = "panelSubMenu";
-            this.panelSubMenu.Size = new System.Drawing.Size(180, 131);
+            this.panelSubMenu.Size = new System.Drawing.Size(180, 120);
             this.panelSubMenu.TabIndex = 4;
             this.panelSubMenu.Visible = false;
             // 
@@ -180,7 +204,7 @@
             this.iconButtonHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonHome.IconSize = 25;
             this.iconButtonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonHome.Location = new System.Drawing.Point(0, 212);
+            this.iconButtonHome.Location = new System.Drawing.Point(0, 178);
             this.iconButtonHome.Margin = new System.Windows.Forms.Padding(0);
             this.iconButtonHome.Name = "iconButtonHome";
             this.iconButtonHome.Rotation = 0D;
@@ -245,6 +269,7 @@
             this.iconButtonRelatorio.TabIndex = 1;
             this.iconButtonRelatorio.Text = "Relatórios";
             this.iconButtonRelatorio.UseVisualStyleBackColor = true;
+            this.iconButtonRelatorio.Click += new System.EventHandler(this.iconButtonRelatorio_Click);
             // 
             // iconButtonVenda
             // 
@@ -257,7 +282,7 @@
             this.iconButtonVenda.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonVenda.IconSize = 25;
             this.iconButtonVenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonVenda.Location = new System.Drawing.Point(0, 247);
+            this.iconButtonVenda.Location = new System.Drawing.Point(0, 213);
             this.iconButtonVenda.Margin = new System.Windows.Forms.Padding(0);
             this.iconButtonVenda.Name = "iconButtonVenda";
             this.iconButtonVenda.Rotation = 0D;
@@ -362,5 +387,6 @@
         private FontAwesome.Sharp.IconButton iconButtonCasdastrarFornecedor;
         private FontAwesome.Sharp.IconButton iconButtonCadastarProduto;
         private FontAwesome.Sharp.IconButton iconButtonEditarFornecedor;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

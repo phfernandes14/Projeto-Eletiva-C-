@@ -33,7 +33,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>.\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -106,6 +106,23 @@
     <Compile Include="FormRegistroVenda.Designer.cs">
       <DependentUpon>FormRegistroVenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProdutos.Designer.cs">
+      <DependentUpon>FormProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatórios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatórios.Designer.cs">
+      <DependentUpon>FormRelatórios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PostoDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAdicionarProduto.resx">
@@ -126,8 +143,14 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormProdutos.resx">
+      <DependentUpon>FormProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistroVenda.resx">
       <DependentUpon>FormRegistroVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatórios.resx">
+      <DependentUpon>FormRelatórios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,6 +162,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="PostoDataSet.xsc">
+      <DependentUpon>PostoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PostoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PostoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PostoDataSet.xss">
+      <DependentUpon>PostoDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

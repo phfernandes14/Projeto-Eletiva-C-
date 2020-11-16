@@ -83,5 +83,15 @@ namespace ProjetoEletivaCSharp
         {
             openChildForm(new FormEditarFornecedor());
         }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new FormProdutos());
+        }
+
+        private void iconButtonRelatorio_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormRelatórios());
+        }
     }
 }

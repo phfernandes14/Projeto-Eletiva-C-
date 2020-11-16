@@ -35,7 +35,6 @@
             this.labelValorVenda = new System.Windows.Forms.Label();
             this.labelValorCompra = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtFornecedor = new System.Windows.Forms.TextBox();
             this.txtValorVenda = new System.Windows.Forms.TextBox();
             this.txtValorCompra = new System.Windows.Forms.TextBox();
             this.bttnCadastrar = new System.Windows.Forms.Button();
@@ -43,6 +42,9 @@
             this.flowLayoutPanelAviso = new System.Windows.Forms.FlowLayoutPanel();
             this.labelGuia = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxFornecedor = new System.Windows.Forms.ComboBox();
+            this.txtQuantidade = new System.Windows.Forms.TextBox();
+            this.labelQuantidade = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.flowLayoutPanelAviso.SuspendLayout();
             this.SuspendLayout();
@@ -87,7 +89,7 @@
             this.labelFornecedor.AutoSize = true;
             this.labelFornecedor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
             this.labelFornecedor.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelFornecedor.Location = new System.Drawing.Point(46, 300);
+            this.labelFornecedor.Location = new System.Drawing.Point(46, 337);
             this.labelFornecedor.Name = "labelFornecedor";
             this.labelFornecedor.Size = new System.Drawing.Size(91, 19);
             this.labelFornecedor.TabIndex = 7;
@@ -122,13 +124,6 @@
             this.txtNome.Size = new System.Drawing.Size(100, 20);
             this.txtNome.TabIndex = 10;
             // 
-            // txtFornecedor
-            // 
-            this.txtFornecedor.Location = new System.Drawing.Point(187, 302);
-            this.txtFornecedor.Name = "txtFornecedor";
-            this.txtFornecedor.Size = new System.Drawing.Size(100, 20);
-            this.txtFornecedor.TabIndex = 11;
-            // 
             // txtValorVenda
             // 
             this.txtValorVenda.Location = new System.Drawing.Point(187, 264);
@@ -147,18 +142,19 @@
             // 
             this.bttnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCadastrar.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnCadastrar.Location = new System.Drawing.Point(170, 389);
+            this.bttnCadastrar.Location = new System.Drawing.Point(187, 416);
             this.bttnCadastrar.Name = "bttnCadastrar";
             this.bttnCadastrar.Size = new System.Drawing.Size(116, 30);
             this.bttnCadastrar.TabIndex = 21;
             this.bttnCadastrar.Text = "Cadastrar";
             this.bttnCadastrar.UseVisualStyleBackColor = true;
+            this.bttnCadastrar.Click += new System.EventHandler(this.bttnCadastrar_Click);
             // 
             // bttnLimpar
             // 
             this.bttnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnLimpar.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnLimpar.Location = new System.Drawing.Point(354, 389);
+            this.bttnLimpar.Location = new System.Drawing.Point(371, 416);
             this.bttnLimpar.Name = "bttnLimpar";
             this.bttnLimpar.Size = new System.Drawing.Size(116, 30);
             this.bttnLimpar.TabIndex = 22;
@@ -197,18 +193,46 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "\r\nLembre-se que todos os campos são obrigatórios.";
             // 
+            // comboBoxFornecedor
+            // 
+            this.comboBoxFornecedor.FormattingEnabled = true;
+            this.comboBoxFornecedor.Location = new System.Drawing.Point(187, 337);
+            this.comboBoxFornecedor.Name = "comboBoxFornecedor";
+            this.comboBoxFornecedor.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxFornecedor.TabIndex = 27;
+            // 
+            // txtQuantidade
+            // 
+            this.txtQuantidade.Location = new System.Drawing.Point(186, 300);
+            this.txtQuantidade.Name = "txtQuantidade";
+            this.txtQuantidade.Size = new System.Drawing.Size(100, 20);
+            this.txtQuantidade.TabIndex = 29;
+            // 
+            // labelQuantidade
+            // 
+            this.labelQuantidade.AutoSize = true;
+            this.labelQuantidade.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
+            this.labelQuantidade.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelQuantidade.Location = new System.Drawing.Point(45, 300);
+            this.labelQuantidade.Name = "labelQuantidade";
+            this.labelQuantidade.Size = new System.Drawing.Size(92, 19);
+            this.labelQuantidade.TabIndex = 28;
+            this.labelQuantidade.Text = "Quantidade";
+            // 
             // FormAdicionarProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(721, 529);
+            this.Controls.Add(this.txtQuantidade);
+            this.Controls.Add(this.labelQuantidade);
+            this.Controls.Add(this.comboBoxFornecedor);
             this.Controls.Add(this.flowLayoutPanelAviso);
             this.Controls.Add(this.bttnLimpar);
             this.Controls.Add(this.bttnCadastrar);
             this.Controls.Add(this.txtValorCompra);
             this.Controls.Add(this.txtValorVenda);
-            this.Controls.Add(this.txtFornecedor);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.labelValorCompra);
             this.Controls.Add(this.labelValorVenda);
@@ -236,7 +260,6 @@
         private System.Windows.Forms.Label labelValorVenda;
         private System.Windows.Forms.Label labelValorCompra;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtFornecedor;
         private System.Windows.Forms.TextBox txtValorVenda;
         private System.Windows.Forms.TextBox txtValorCompra;
         private System.Windows.Forms.Button bttnCadastrar;
@@ -244,5 +267,8 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelAviso;
         private System.Windows.Forms.Label labelGuia;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxFornecedor;
+        private System.Windows.Forms.TextBox txtQuantidade;
+        private System.Windows.Forms.Label labelQuantidade;
     }
 }
