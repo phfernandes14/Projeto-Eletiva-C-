@@ -356,6 +356,7 @@
             this.Controls.Add(this.panelMenu);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
             this.panelMenu.ResumeLayout(false);
             this.panelSubMenu.ResumeLayout(false);

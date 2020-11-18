@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,8 +56,12 @@
             this.bttnLimpar = new System.Windows.Forms.Button();
             this.bttnSalvar = new System.Windows.Forms.Button();
             this.comboBoxFornecedorEditar = new System.Windows.Forms.ComboBox();
+            this.postoDataSet = new ProjetoEletivaCSharp.PostoDataSet();
+            this.postoDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.flowLayoutPanelAviso.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.postoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postoDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -65,7 +70,7 @@
             this.txtEmail.Location = new System.Drawing.Point(206, 493);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(219, 26);
-            this.txtEmail.TabIndex = 46;
+            this.txtEmail.TabIndex = 9;
             // 
             // txtTelefone
             // 
@@ -73,7 +78,7 @@
             this.txtTelefone.Location = new System.Drawing.Point(206, 458);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(219, 26);
-            this.txtTelefone.TabIndex = 47;
+            this.txtTelefone.TabIndex = 8;
             // 
             // label3
             // 
@@ -147,7 +152,7 @@
             this.txtRazao.Location = new System.Drawing.Point(206, 249);
             this.txtRazao.Name = "txtRazao";
             this.txtRazao.Size = new System.Drawing.Size(219, 26);
-            this.txtRazao.TabIndex = 43;
+            this.txtRazao.TabIndex = 2;
             // 
             // txtEndereco
             // 
@@ -155,7 +160,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(206, 424);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(219, 26);
-            this.txtEndereco.TabIndex = 38;
+            this.txtEndereco.TabIndex = 7;
             // 
             // labelNatureza
             // 
@@ -174,7 +179,7 @@
             this.txtRamo.Location = new System.Drawing.Point(206, 389);
             this.txtRamo.Name = "txtRamo";
             this.txtRamo.Size = new System.Drawing.Size(219, 26);
-            this.txtRamo.TabIndex = 39;
+            this.txtRamo.TabIndex = 6;
             // 
             // txtInsEstadual
             // 
@@ -182,7 +187,7 @@
             this.txtInsEstadual.Location = new System.Drawing.Point(206, 284);
             this.txtInsEstadual.Name = "txtInsEstadual";
             this.txtInsEstadual.Size = new System.Drawing.Size(219, 26);
-            this.txtInsEstadual.TabIndex = 42;
+            this.txtInsEstadual.TabIndex = 3;
             // 
             // txtCNPJ
             // 
@@ -190,7 +195,7 @@
             this.txtCNPJ.Location = new System.Drawing.Point(206, 217);
             this.txtCNPJ.Name = "txtCNPJ";
             this.txtCNPJ.Size = new System.Drawing.Size(219, 26);
-            this.txtCNPJ.TabIndex = 37;
+            this.txtCNPJ.TabIndex = 1;
             // 
             // labelEndereço
             // 
@@ -209,7 +214,7 @@
             this.txtNatureza.Location = new System.Drawing.Point(206, 354);
             this.txtNatureza.Name = "txtNatureza";
             this.txtNatureza.Size = new System.Drawing.Size(219, 26);
-            this.txtNatureza.TabIndex = 40;
+            this.txtNatureza.TabIndex = 5;
             // 
             // txtInsMunicipal
             // 
@@ -217,7 +222,7 @@
             this.txtInsMunicipal.Location = new System.Drawing.Point(206, 320);
             this.txtInsMunicipal.Name = "txtInsMunicipal";
             this.txtInsMunicipal.Size = new System.Drawing.Size(219, 26);
-            this.txtInsMunicipal.TabIndex = 41;
+            this.txtInsMunicipal.TabIndex = 4;
             // 
             // labelRamo
             // 
@@ -304,7 +309,7 @@
             this.bttnLimpar.Location = new System.Drawing.Point(530, 313);
             this.bttnLimpar.Name = "bttnLimpar";
             this.bttnLimpar.Size = new System.Drawing.Size(116, 30);
-            this.bttnLimpar.TabIndex = 54;
+            this.bttnLimpar.TabIndex = 11;
             this.bttnLimpar.Text = "Limpar";
             this.bttnLimpar.UseVisualStyleBackColor = true;
             // 
@@ -316,18 +321,30 @@
             this.bttnSalvar.Location = new System.Drawing.Point(530, 220);
             this.bttnSalvar.Name = "bttnSalvar";
             this.bttnSalvar.Size = new System.Drawing.Size(116, 30);
-            this.bttnSalvar.TabIndex = 53;
+            this.bttnSalvar.TabIndex = 10;
             this.bttnSalvar.Text = "Salvar";
             this.bttnSalvar.UseVisualStyleBackColor = false;
             this.bttnSalvar.Click += new System.EventHandler(this.bttnSalvar_Click);
             // 
             // comboBoxFornecedorEditar
             // 
+            this.comboBoxFornecedorEditar.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.postoDataSet, "Produtos.Item", true));
             this.comboBoxFornecedorEditar.FormattingEnabled = true;
             this.comboBoxFornecedorEditar.Location = new System.Drawing.Point(354, 155);
             this.comboBoxFornecedorEditar.Name = "comboBoxFornecedorEditar";
             this.comboBoxFornecedorEditar.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxFornecedorEditar.TabIndex = 55;
+            this.comboBoxFornecedorEditar.TabIndex = 0;
+            this.comboBoxFornecedorEditar.SelectedIndexChanged += new System.EventHandler(this.comboBoxFornecedorEditar_SelectedIndexChanged);
+            // 
+            // postoDataSet
+            // 
+            this.postoDataSet.DataSetName = "PostoDataSet";
+            this.postoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // postoDataSetBindingSource
+            // 
+            this.postoDataSetBindingSource.DataSource = this.postoDataSet;
+            this.postoDataSetBindingSource.Position = 0;
             // 
             // FormEditarFornecedor
             // 
@@ -366,6 +383,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.flowLayoutPanelAviso.ResumeLayout(false);
             this.flowLayoutPanelAviso.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.postoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postoDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -400,5 +419,7 @@
         private System.Windows.Forms.Button bttnLimpar;
         private System.Windows.Forms.Button bttnSalvar;
         private System.Windows.Forms.ComboBox comboBoxFornecedorEditar;
+        private System.Windows.Forms.BindingSource postoDataSetBindingSource;
+        private PostoDataSet postoDataSet;
     }
 }

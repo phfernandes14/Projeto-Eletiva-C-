@@ -32,5 +32,10 @@ namespace ProjetoEletivaCSharp
                 MessageBox.Show("Credenciais Incorretas!!!");
             }
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
