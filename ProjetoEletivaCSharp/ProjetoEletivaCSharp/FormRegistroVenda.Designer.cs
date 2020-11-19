@@ -37,6 +37,8 @@
             this.bttnLimpar = new System.Windows.Forms.Button();
             this.bttnRegistrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblTroco = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblValorPagar = new System.Windows.Forms.Label();
@@ -45,9 +47,12 @@
             this.flowLayoutPanelAviso = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblEstoque = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxItem = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblValorUnitario = new System.Windows.Forms.Label();
+            this.btnTroco = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.flowLayoutPanelAviso.SuspendLayout();
@@ -60,6 +65,7 @@
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(100, 26);
             this.txtQuantidade.TabIndex = 5;
+            this.txtQuantidade.TextChanged += new System.EventHandler(this.txtQuantidade_TextChanged);
             // 
             // lbl_quantidade
             // 
@@ -85,7 +91,7 @@
             // 
             this.lbl_item.AutoSize = true;
             this.lbl_item.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
-            this.lbl_item.Location = new System.Drawing.Point(71, 193);
+            this.lbl_item.Location = new System.Drawing.Point(71, 149);
             this.lbl_item.Name = "lbl_item";
             this.lbl_item.Size = new System.Drawing.Size(40, 19);
             this.lbl_item.TabIndex = 0;
@@ -119,7 +125,7 @@
             // 
             this.bttnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnLimpar.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnLimpar.Location = new System.Drawing.Point(401, 449);
+            this.bttnLimpar.Location = new System.Drawing.Point(467, 449);
             this.bttnLimpar.Name = "bttnLimpar";
             this.bttnLimpar.Size = new System.Drawing.Size(116, 30);
             this.bttnLimpar.TabIndex = 26;
@@ -132,7 +138,7 @@
             this.bttnRegistrar.BackColor = System.Drawing.Color.Transparent;
             this.bttnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnRegistrar.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnRegistrar.Location = new System.Drawing.Point(153, 449);
+            this.bttnRegistrar.Location = new System.Drawing.Point(132, 449);
             this.bttnRegistrar.Name = "bttnRegistrar";
             this.bttnRegistrar.Size = new System.Drawing.Size(116, 30);
             this.bttnRegistrar.TabIndex = 25;
@@ -143,6 +149,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblTroco);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.lblValorPagar);
@@ -152,15 +160,35 @@
             this.panel1.Size = new System.Drawing.Size(501, 73);
             this.panel1.TabIndex = 27;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(347, 29);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 18);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "R$";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(127, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 18);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "R$";
+            // 
             // lblTroco
             // 
             this.lblTroco.AutoSize = true;
             this.lblTroco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTroco.Location = new System.Drawing.Point(354, 29);
+            this.lblTroco.Location = new System.Drawing.Point(380, 29);
             this.lblTroco.Name = "lblTroco";
-            this.lblTroco.Size = new System.Drawing.Size(55, 18);
+            this.lblTroco.Size = new System.Drawing.Size(36, 18);
             this.lblTroco.TabIndex = 4;
-            this.lblTroco.Text = "R$0,00";
+            this.lblTroco.Text = "0,00";
             // 
             // label3
             // 
@@ -176,11 +204,11 @@
             // 
             this.lblValorPagar.AutoSize = true;
             this.lblValorPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorPagar.Location = new System.Drawing.Point(133, 29);
+            this.lblValorPagar.Location = new System.Drawing.Point(160, 29);
             this.lblValorPagar.Name = "lblValorPagar";
-            this.lblValorPagar.Size = new System.Drawing.Size(55, 18);
+            this.lblValorPagar.Size = new System.Drawing.Size(36, 18);
             this.lblValorPagar.TabIndex = 2;
-            this.lblValorPagar.Text = "R$0,00";
+            this.lblValorPagar.Text = "0,00";
             // 
             // txtPago
             // 
@@ -232,33 +260,67 @@
             this.label4.Text = "Item: selecione o item a ser vendido.\r\nQuantidade: digite a quantidade vendida.\r\n" +
     "Pago: digite o valor dado pelo cliente.";
             // 
-            // label6
+            // lblEstoque
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
-            this.label6.Location = new System.Drawing.Point(178, 228);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 19);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "0";
+            this.lblEstoque.AutoSize = true;
+            this.lblEstoque.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
+            this.lblEstoque.Location = new System.Drawing.Point(178, 184);
+            this.lblEstoque.Name = "lblEstoque";
+            this.lblEstoque.Size = new System.Drawing.Size(18, 19);
+            this.lblEstoque.TabIndex = 32;
+            this.lblEstoque.Text = "0";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
-            this.label7.Location = new System.Drawing.Point(71, 228);
+            this.label7.Location = new System.Drawing.Point(71, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 19);
             this.label7.TabIndex = 33;
             this.label7.Text = "Em Estoque:";
             // 
-            // comboBox1
+            // comboBoxItem
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(169, 195);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 34;
+            this.comboBoxItem.FormattingEnabled = true;
+            this.comboBoxItem.Location = new System.Drawing.Point(169, 151);
+            this.comboBoxItem.Name = "comboBoxItem";
+            this.comboBoxItem.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxItem.TabIndex = 34;
+            this.comboBoxItem.SelectedIndexChanged += new System.EventHandler(this.comboBoxItem_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
+            this.label8.Location = new System.Drawing.Point(71, 227);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 19);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "Valor Unitario:";
+            // 
+            // lblValorUnitario
+            // 
+            this.lblValorUnitario.AutoSize = true;
+            this.lblValorUnitario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
+            this.lblValorUnitario.Location = new System.Drawing.Point(178, 227);
+            this.lblValorUnitario.Name = "lblValorUnitario";
+            this.lblValorUnitario.Size = new System.Drawing.Size(18, 19);
+            this.lblValorUnitario.TabIndex = 35;
+            this.lblValorUnitario.Text = "0";
+            // 
+            // btnTroco
+            // 
+            this.btnTroco.BackColor = System.Drawing.Color.Transparent;
+            this.btnTroco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTroco.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTroco.Location = new System.Drawing.Point(301, 449);
+            this.btnTroco.Name = "btnTroco";
+            this.btnTroco.Size = new System.Drawing.Size(126, 30);
+            this.btnTroco.TabIndex = 37;
+            this.btnTroco.Text = "Calcular Troco";
+            this.btnTroco.UseVisualStyleBackColor = false;
+            this.btnTroco.Click += new System.EventHandler(this.btnTroco_Click);
             // 
             // FormRegistroVenda
             // 
@@ -266,9 +328,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(721, 529);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnTroco);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblValorUnitario);
+            this.Controls.Add(this.comboBoxItem);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblEstoque);
             this.Controls.Add(this.flowLayoutPanelAviso);
             this.Controls.Add(this.txtPago);
             this.Controls.Add(this.label5);
@@ -312,8 +377,13 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelAviso;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblEstoque;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxItem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblValorUnitario;
+        private System.Windows.Forms.Button btnTroco;
     }
 }

@@ -56,11 +56,12 @@
             this.bttnLimpar = new System.Windows.Forms.Button();
             this.bttnSalvar = new System.Windows.Forms.Button();
             this.comboBoxFornecedorEditar = new System.Windows.Forms.ComboBox();
-            this.postoDataSet = new ProjetoEletivaCSharp.PostoDataSet();
+            this.postoDataSet2 = new ProjetoEletivaCSharp.PostoDataSet2();
             this.postoDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnApagar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.flowLayoutPanelAviso.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.postoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postoDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postoDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -312,6 +313,7 @@
             this.bttnLimpar.TabIndex = 11;
             this.bttnLimpar.Text = "Limpar";
             this.bttnLimpar.UseVisualStyleBackColor = true;
+            this.bttnLimpar.Click += new System.EventHandler(this.bttnLimpar_Click);
             // 
             // bttnSalvar
             // 
@@ -328,7 +330,7 @@
             // 
             // comboBoxFornecedorEditar
             // 
-            this.comboBoxFornecedorEditar.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.postoDataSet, "Produtos.Item", true));
+            this.comboBoxFornecedorEditar.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.postoDataSet2, "Produtos.Item", true));
             this.comboBoxFornecedorEditar.FormattingEnabled = true;
             this.comboBoxFornecedorEditar.Location = new System.Drawing.Point(354, 155);
             this.comboBoxFornecedorEditar.Name = "comboBoxFornecedorEditar";
@@ -338,13 +340,25 @@
             // 
             // postoDataSet
             // 
-            this.postoDataSet.DataSetName = "PostoDataSet";
-            this.postoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.postoDataSet2.DataSetName = "PostoDataSet";
+            this.postoDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // postoDataSetBindingSource
             // 
-            this.postoDataSetBindingSource.DataSource = this.postoDataSet;
+            this.postoDataSetBindingSource.DataSource = this.postoDataSet2;
             this.postoDataSetBindingSource.Position = 0;
+            // 
+            // btnApagar
+            // 
+            this.btnApagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnApagar.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.Location = new System.Drawing.Point(530, 265);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(116, 30);
+            this.btnApagar.TabIndex = 53;
+            this.btnApagar.Text = "Apagar";
+            this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // FormEditarFornecedor
             // 
@@ -352,6 +366,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(737, 568);
+            this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.comboBoxFornecedorEditar);
             this.Controls.Add(this.bttnLimpar);
             this.Controls.Add(this.bttnSalvar);
@@ -383,7 +398,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.flowLayoutPanelAviso.ResumeLayout(false);
             this.flowLayoutPanelAviso.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.postoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postoDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postoDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -420,6 +435,7 @@
         private System.Windows.Forms.Button bttnSalvar;
         private System.Windows.Forms.ComboBox comboBoxFornecedorEditar;
         private System.Windows.Forms.BindingSource postoDataSetBindingSource;
-        private PostoDataSet postoDataSet;
+        private PostoDataSet2 postoDataSet2;
+        private System.Windows.Forms.Button btnApagar;
     }
 }

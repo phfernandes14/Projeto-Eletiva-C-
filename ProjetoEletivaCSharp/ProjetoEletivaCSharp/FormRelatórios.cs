@@ -16,5 +16,13 @@ namespace ProjetoEletivaCSharp
         {
             InitializeComponent();
         }
+
+        private void FormRelatórios_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'postoDataSet2.Venda' table. You can move, or remove it, as needed.
+            this.vendaTableAdapter.Fill(this.postoDataSet2.Venda);
+
+
+        }
     }
 }

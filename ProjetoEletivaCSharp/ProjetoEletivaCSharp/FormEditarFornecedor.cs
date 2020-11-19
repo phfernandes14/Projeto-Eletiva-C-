@@ -94,6 +94,48 @@ namespace ProjetoEletivaCSharp
             
             ConStr.Close();
         }
+
+        private void deleteFornecedor()
+        {
+            ConStr.Open();
+            SqlCommand cmd = ConStr.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "DELETE FROM Fornecedores WHERE CNPJ = '" + int.Parse(txtCNPJ.Text) + "' ";
+            cmd.ExecuteNonQuery();
+
+            ConStr.Close();
+        }
+
+        
+
+        private void bttnLimpar_Click(object sender, EventArgs e)
+        {
+            Limpar();
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Deseja excluir este produto?", "Confirmação", MessageBoxButtons.YesNo))
+            {
+                deleteFornecedor();
+                Limpar();
+                preencherComboBox();
+
+            }
+        }
+
+        private void Limpar()
+        {
+            txtCNPJ.Clear();
+            txtRazao.Clear();
+            txtInsEstadual.Clear();
+            txtInsMunicipal.Clear();
+            txtNatureza.Clear();
+            txtRamo.Clear();
+            txtEndereco.Clear();
+            txtEmail.Clear();
+            txtTelefone.Clear();
+        }
     }
 }
          

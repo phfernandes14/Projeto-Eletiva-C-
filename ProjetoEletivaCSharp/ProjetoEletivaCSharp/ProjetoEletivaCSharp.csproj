@@ -118,15 +118,10 @@
     <Compile Include="FormRelatórios.Designer.cs">
       <DependentUpon>FormRelatórios.cs</DependentUpon>
     </Compile>
-    <Compile Include="PostoDataSet.Designer.cs">
+    <Compile Include="PostoDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PostoDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PostoDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PostoDataSet1.xsd</DependentUpon>
+      <DependentUpon>PostoDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -167,27 +162,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
-    <None Include="PostoDataSet.xsc">
-      <DependentUpon>PostoDataSet.xsd</DependentUpon>
+    <None Include="PostoDataSet2.xsc">
+      <DependentUpon>PostoDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="PostoDataSet.xsd">
+    <None Include="PostoDataSet2.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PostoDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>PostoDataSet2.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="PostoDataSet.xss">
-      <DependentUpon>PostoDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="PostoDataSet1.xsc">
-      <DependentUpon>PostoDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="PostoDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PostoDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PostoDataSet1.xss">
-      <DependentUpon>PostoDataSet1.xsd</DependentUpon>
+    <None Include="PostoDataSet2.xss">
+      <DependentUpon>PostoDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -20,9 +20,9 @@ namespace ProjetoEletivaCSharp {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("PostoDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("PostoDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class PostoDataSet1 : global::System.Data.DataSet {
+    public partial class PostoDataSet2 : global::System.Data.DataSet {
         
         private FornecedoresDataTable tableFornecedores;
         
@@ -34,7 +34,7 @@ namespace ProjetoEletivaCSharp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public PostoDataSet1() {
+        public PostoDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -45,7 +45,7 @@ namespace ProjetoEletivaCSharp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected PostoDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected PostoDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -157,7 +157,7 @@ namespace ProjetoEletivaCSharp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            PostoDataSet1 cln = ((PostoDataSet1)(base.Clone()));
+            PostoDataSet2 cln = ((PostoDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -247,9 +247,9 @@ namespace ProjetoEletivaCSharp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "PostoDataSet1";
+            this.DataSetName = "PostoDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/PostoDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/PostoDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableFornecedores = new FornecedoresDataTable();
@@ -289,7 +289,7 @@ namespace ProjetoEletivaCSharp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            PostoDataSet1 ds = new PostoDataSet1();
+            PostoDataSet2 ds = new PostoDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -666,7 +666,7 @@ namespace ProjetoEletivaCSharp {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PostoDataSet1 ds = new PostoDataSet1();
+                PostoDataSet2 ds = new PostoDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1009,7 +1009,7 @@ namespace ProjetoEletivaCSharp {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PostoDataSet1 ds = new PostoDataSet1();
+                PostoDataSet2 ds = new PostoDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1315,7 +1315,7 @@ namespace ProjetoEletivaCSharp {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PostoDataSet1 ds = new PostoDataSet1();
+                PostoDataSet2 ds = new PostoDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1765,7 +1765,7 @@ namespace ProjetoEletivaCSharp {
         }
     }
 }
-namespace ProjetoEletivaCSharp.PostoDataSet1TableAdapters {
+namespace ProjetoEletivaCSharp.PostoDataSet2TableAdapters {
     
     
     /// <summary>
@@ -1973,7 +1973,7 @@ SELECT CNPJ, Razao_social, Inscri_estadual, Insc_municipal, Natureza_juridica, R
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PostoDataSet1.FornecedoresDataTable dataTable) {
+        public virtual int Fill(PostoDataSet2.FornecedoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1986,9 +1986,9 @@ SELECT CNPJ, Razao_social, Inscri_estadual, Insc_municipal, Natureza_juridica, R
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PostoDataSet1.FornecedoresDataTable GetData() {
+        public virtual PostoDataSet2.FornecedoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PostoDataSet1.FornecedoresDataTable dataTable = new PostoDataSet1.FornecedoresDataTable();
+            PostoDataSet2.FornecedoresDataTable dataTable = new PostoDataSet2.FornecedoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1996,14 +1996,14 @@ SELECT CNPJ, Razao_social, Inscri_estadual, Insc_municipal, Natureza_juridica, R
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PostoDataSet1.FornecedoresDataTable dataTable) {
+        public virtual int Update(PostoDataSet2.FornecedoresDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PostoDataSet1 dataSet) {
+        public virtual int Update(PostoDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "Fornecedores");
         }
         
@@ -2386,7 +2386,7 @@ SELECT CNPJ, Razao_social, Inscri_estadual, Insc_municipal, Natureza_juridica, R
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Produtos";
-            tableMapping.ColumnMappings.Add("Id.item", "Id_item");
+            tableMapping.ColumnMappings.Add("Id_item", "Id_item");
             tableMapping.ColumnMappings.Add("Item", "Item");
             tableMapping.ColumnMappings.Add("ValorCompra", "ValorCompra");
             tableMapping.ColumnMappings.Add("Quantidade", "Quantidade");
@@ -2395,12 +2395,9 @@ SELECT CNPJ, Razao_social, Inscri_estadual, Insc_municipal, Natureza_juridica, R
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Produtos] WHERE (([Id.item] = @p2) AND ([Item] = @Original_Ite" +
-                "m) AND ([ValorCompra] = @Original_ValorCompra) AND ([Quantidade] = @Original_Qua" +
-                "ntidade) AND ([ValorVenda] = @Original_ValorVenda) AND ([Fornecedor] = @Original" +
-                "_Fornecedor))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Produtos] WHERE (([Id_item] = @Original_Id_item) AND ([Item] = @Original_Item) AND ([ValorCompra] = @Original_ValorCompra) AND ([Quantidade] = @Original_Quantidade) AND ([ValorVenda] = @Original_ValorVenda) AND ([Fornecedor] = @Original_Fornecedor))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id.item", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_item", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_item", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Item", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Item", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ValorCompra", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "ValorCompra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Quantidade", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantidade", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -2409,7 +2406,7 @@ SELECT CNPJ, Razao_social, Inscri_estadual, Insc_municipal, Natureza_juridica, R
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Produtos] ([Item], [ValorCompra], [Quantidade], [ValorVenda], [Fornecedor]) VALUES (@Item, @ValorCompra, @Quantidade, @ValorVenda, @Fornecedor);
-SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Produtos WHERE (Id.item = SCOPE_IDENTITY())";
+SELECT Id_item, Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Produtos WHERE (Id_item = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Item", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Item", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ValorCompra", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "ValorCompra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2418,21 +2415,21 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Produtos] SET [Item] = @Item, [ValorCompra] = @ValorCompra, [Quantidade] = @Quantidade, [ValorVenda] = @ValorVenda, [Fornecedor] = @Fornecedor WHERE (([Id.item] = @p2) AND ([Item] = @Original_Item) AND ([ValorCompra] = @Original_ValorCompra) AND ([Quantidade] = @Original_Quantidade) AND ([ValorVenda] = @Original_ValorVenda) AND ([Fornecedor] = @Original_Fornecedor));
-SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Produtos WHERE (Id.item = @Id_item)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Produtos] SET [Item] = @Item, [ValorCompra] = @ValorCompra, [Quantidade] = @Quantidade, [ValorVenda] = @ValorVenda, [Fornecedor] = @Fornecedor WHERE (([Id_item] = @Original_Id_item) AND ([Item] = @Original_Item) AND ([ValorCompra] = @Original_ValorCompra) AND ([Quantidade] = @Original_Quantidade) AND ([ValorVenda] = @Original_ValorVenda) AND ([Fornecedor] = @Original_Fornecedor));
+SELECT Id_item, Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Produtos WHERE (Id_item = @Id_item)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Item", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Item", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ValorCompra", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "ValorCompra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quantidade", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantidade", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ValorVenda", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "ValorVenda", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fornecedor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id.item", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_item", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_item", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Item", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Item", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ValorCompra", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "ValorCompra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Quantidade", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantidade", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ValorVenda", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "ValorVenda", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Fornecedor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fornecedor", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_item", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_item", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id_item", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2448,8 +2445,8 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM dbo." +
-                "Produtos";
+            this._commandCollection[0].CommandText = "SELECT Id_item, Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM dbo.Pr" +
+                "odutos";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2457,7 +2454,7 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PostoDataSet1.ProdutosDataTable dataTable) {
+        public virtual int Fill(PostoDataSet2.ProdutosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2470,9 +2467,9 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PostoDataSet1.ProdutosDataTable GetData() {
+        public virtual PostoDataSet2.ProdutosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PostoDataSet1.ProdutosDataTable dataTable = new PostoDataSet1.ProdutosDataTable();
+            PostoDataSet2.ProdutosDataTable dataTable = new PostoDataSet2.ProdutosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2480,14 +2477,14 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PostoDataSet1.ProdutosDataTable dataTable) {
+        public virtual int Update(PostoDataSet2.ProdutosDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PostoDataSet1 dataSet) {
+        public virtual int Update(PostoDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "Produtos");
         }
         
@@ -2510,8 +2507,8 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int p2, string Original_Item, decimal Original_ValorCompra, int Original_Quantidade, decimal Original_ValorVenda, string Original_Fornecedor) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p2));
+        public virtual int Delete(int Original_Id_item, string Original_Item, decimal Original_ValorCompra, int Original_Quantidade, decimal Original_ValorVenda, string Original_Fornecedor) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_item));
             if ((Original_Item == null)) {
                 throw new global::System.ArgumentNullException("Original_Item");
             }
@@ -2583,7 +2580,7 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Item, decimal ValorCompra, int Quantidade, decimal ValorVenda, string Fornecedor, int p2, string Original_Item, decimal Original_ValorCompra, int Original_Quantidade, decimal Original_ValorVenda, string Original_Fornecedor, object Id_item) {
+        public virtual int Update(string Item, decimal ValorCompra, int Quantidade, decimal ValorVenda, string Fornecedor, int Original_Id_item, string Original_Item, decimal Original_ValorCompra, int Original_Quantidade, decimal Original_ValorVenda, string Original_Fornecedor, int Id_item) {
             if ((Item == null)) {
                 throw new global::System.ArgumentNullException("Item");
             }
@@ -2599,7 +2596,7 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Fornecedor));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(p2));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Id_item));
             if ((Original_Item == null)) {
                 throw new global::System.ArgumentNullException("Original_Item");
             }
@@ -2615,12 +2612,7 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_Fornecedor));
             }
-            if ((Id_item == null)) {
-                throw new global::System.ArgumentNullException("Id_item");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(Id_item));
-            }
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Id_item));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2635,6 +2627,14 @@ SELECT [Id.item], Item, ValorCompra, Quantidade, ValorVenda, Fornecedor FROM Pro
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string Item, decimal ValorCompra, int Quantidade, decimal ValorVenda, string Fornecedor, int Original_Id_item, string Original_Item, decimal Original_ValorCompra, int Original_Quantidade, decimal Original_ValorVenda, string Original_Fornecedor) {
+            return this.Update(Item, ValorCompra, Quantidade, ValorVenda, Fornecedor, Original_Id_item, Original_Item, Original_ValorCompra, Original_Quantidade, Original_ValorVenda, Original_Fornecedor, Original_Id_item);
         }
     }
     
@@ -2822,7 +2822,7 @@ SELECT Id, Item, Quantidade, Valor FROM Venda WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PostoDataSet1.VendaDataTable dataTable) {
+        public virtual int Fill(PostoDataSet2.VendaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2835,9 +2835,9 @@ SELECT Id, Item, Quantidade, Valor FROM Venda WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PostoDataSet1.VendaDataTable GetData() {
+        public virtual PostoDataSet2.VendaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PostoDataSet1.VendaDataTable dataTable = new PostoDataSet1.VendaDataTable();
+            PostoDataSet2.VendaDataTable dataTable = new PostoDataSet2.VendaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2845,14 +2845,14 @@ SELECT Id, Item, Quantidade, Valor FROM Venda WHERE (Id = @Id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PostoDataSet1.VendaDataTable dataTable) {
+        public virtual int Update(PostoDataSet2.VendaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PostoDataSet1 dataSet) {
+        public virtual int Update(PostoDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "Venda");
         }
         
@@ -3164,7 +3164,7 @@ SELECT Id, Item, Quantidade, Valor FROM Venda WHERE (Id = @Id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(PostoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(PostoDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._fornecedoresTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Fornecedores.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -3201,7 +3201,7 @@ SELECT Id, Item, Quantidade, Valor FROM Venda WHERE (Id = @Id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(PostoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(PostoDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._fornecedoresTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Fornecedores.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -3235,7 +3235,7 @@ SELECT Id, Item, Quantidade, Valor FROM Venda WHERE (Id = @Id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(PostoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(PostoDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._vendaTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Venda.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -3293,7 +3293,7 @@ SELECT Id, Item, Quantidade, Valor FROM Venda WHERE (Id = @Id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(PostoDataSet1 dataSet) {
+        public virtual int UpdateAll(PostoDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
