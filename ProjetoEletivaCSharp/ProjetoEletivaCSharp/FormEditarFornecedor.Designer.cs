@@ -338,7 +338,7 @@
             this.comboBoxFornecedorEditar.TabIndex = 0;
             this.comboBoxFornecedorEditar.SelectedIndexChanged += new System.EventHandler(this.comboBoxFornecedorEditar_SelectedIndexChanged);
             // 
-            // postoDataSet
+            // postoDataSet2
             // 
             this.postoDataSet2.DataSetName = "PostoDataSet";
             this.postoDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
@@ -355,7 +355,7 @@
             this.btnApagar.Location = new System.Drawing.Point(530, 265);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(116, 30);
-            this.btnApagar.TabIndex = 53;
+            this.btnApagar.TabIndex = 12;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
             this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);

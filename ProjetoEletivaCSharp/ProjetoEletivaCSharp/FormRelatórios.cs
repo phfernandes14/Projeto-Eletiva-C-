@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace ProjetoEletivaCSharp
 {
@@ -19,8 +21,17 @@ namespace ProjetoEletivaCSharp
 
         private void FormRelatórios_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'postoDataSet2.Venda' table. You can move, or remove it, as needed.
-            this.vendaTableAdapter.Fill(this.postoDataSet2.Venda);
+            
+            
+            string varStrCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Posto.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection objConexao = new SqlConnection(varStrCon);
+            objConexao.Open();
+
+            string consulta = "select * from Venda";
+            SqlDataAdapter objComando = new SqlDataAdapter(consulta, objConexao);
+            DataSet ds = new DataSet();
+            objComando.Fill(ds);
+            dataGridViewRelatorios.DataSource = ds.Tables[0];
 
 
         }

@@ -19,6 +19,7 @@ namespace ProjetoEletivaCSharp
         public FormAdicionarProduto()
         {
             InitializeComponent();
+            preencherComboBoxFornecedor();
         }
 
         private void bttnLimpar_Click(object sender, EventArgs e)
@@ -40,6 +41,35 @@ namespace ProjetoEletivaCSharp
                 MessageBox.Show("Algo deu errado");
 
             }
+        }
+
+        private void preencherComboBoxFornecedor()
+        {
+            try
+            {
+                comboBoxFornecedor.Items.Clear();
+
+                ConStr.Open();
+                SqlCommand cmd = ConStr.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT Razao_social FROM Fornecedores";
+                cmd.ExecuteNonQuery();
+                SqlDataReader reader;
+
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    comboBoxFornecedor.Items.Add(reader.GetString(0));
+                }
+
+                ConStr.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
+
         }
 
         private void bttnCadastrar_Click(object sender, EventArgs e)

@@ -34,14 +34,24 @@ namespace ProjetoEletivaCSharp
 
         private void limparCampos()
         {
-            txtQuantidade.Clear();
-            txtPago.Clear();
-            lblEstoque.Text = "0";
+            try
+            {
+                txtQuantidade.Clear();
+                txtPago.Clear();
+                lblEstoque.Text = "0";
+                lblTroco.Text = "0";
+                lblValorUnitario.Text = "0";
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
 
         private void bttnRegistrar_Click(object sender, EventArgs e)
         {
             registrar();
+            updateEstoque();
         }
 
         private void registrar()
@@ -69,23 +79,30 @@ namespace ProjetoEletivaCSharp
         }
         private void preencherComboBox()
         {
-            comboBoxItem.Items.Clear();
-
-            ConStr.Open();
-            SqlCommand cmd = ConStr.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT Item FROM Produtos";
-            cmd.ExecuteNonQuery();
-            SqlDataReader reader;
-
-            reader = cmd.ExecuteReader();
-
-            while (reader.Read())
+            try
             {
-                comboBoxItem.Items.Add(reader.GetString(0));
-            }
+                comboBoxItem.Items.Clear();
 
-            ConStr.Close();
+                ConStr.Open();
+                SqlCommand cmd = ConStr.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT Item FROM Produtos";
+                cmd.ExecuteNonQuery();
+                SqlDataReader reader;
+
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    comboBoxItem.Items.Add(reader.GetString(0));
+                }
+
+                ConStr.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
 
         }
 
@@ -97,22 +114,29 @@ namespace ProjetoEletivaCSharp
 
         private void valorUnitario()
         {
-            ConStr.Open();
-            SqlCommand cmd = ConStr.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT ValorVenda FROM Produtos WHERE Item = '" + comboBoxItem.SelectedItem + "'";
-            cmd.ExecuteNonQuery();
-            SqlDataReader reader;
-
-            reader = cmd.ExecuteReader();
-
-            while (reader.Read())
+            try
             {
-                lblValorUnitario.Text = reader.GetDecimal(0).ToString();
+                ConStr.Open();
+                SqlCommand cmd = ConStr.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT ValorVenda FROM Produtos WHERE Item = '" + comboBoxItem.SelectedItem + "'";
+                cmd.ExecuteNonQuery();
+                SqlDataReader reader;
+
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    lblValorUnitario.Text = reader.GetDecimal(0).ToString();
+                }
+
+
+                ConStr.Close();
             }
-
-
-            ConStr.Close();
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
 
         private void valorAPagar()
@@ -123,6 +147,10 @@ namespace ProjetoEletivaCSharp
                 {
 
                     lblValorPagar.Text = (int.Parse(txtQuantidade.Text) * float.Parse(lblValorUnitario.Text)).ToString("c");
+                }
+                else
+                {
+                    lblValorPagar.Text = "0,00";
                 }
             }
             catch
@@ -140,28 +168,43 @@ namespace ProjetoEletivaCSharp
 
         private void preenchendoEstoque()
         {
-            ConStr.Open();
-            SqlCommand cmd = ConStr.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT Quantidade FROM Produtos WHERE Item = '" + comboBoxItem.SelectedItem + "'";
-            cmd.ExecuteNonQuery();
-            SqlDataReader reader;
-
-            reader = cmd.ExecuteReader();
-
-            if (reader.Read())
+            try
             {
-                lblEstoque.Text = reader.GetInt32(0).ToString();
+                ConStr.Open();
+                SqlCommand cmd = ConStr.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT Quantidade,Id_item FROM Produtos WHERE Item = '" + comboBoxItem.SelectedItem + "'";
+                cmd.ExecuteNonQuery();
+                SqlDataReader reader;
+
+                reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    lblEstoque.Text = reader.GetInt32(0).ToString();
+                    txtIdtem.Text = reader.GetInt32(1).ToString();
+                }
+
+                ConStr.Close();
+
+                valorUnitario();
             }
-
-            ConStr.Close();
-
-            valorUnitario();
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
 
         private void troco()
         {
-            lblTroco.Text = (float.Parse(txtPago.Text) - (int.Parse(txtQuantidade.Text) * float.Parse(lblValorUnitario.Text))).ToString("c");
+            try
+            {
+                lblTroco.Text = (float.Parse(txtPago.Text) - (int.Parse(txtQuantidade.Text) * float.Parse(lblValorUnitario.Text))).ToString("c");
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
 
         private void btnTroco_Click(object sender, EventArgs e)
@@ -174,14 +217,21 @@ namespace ProjetoEletivaCSharp
 
         private void updateEstoque()
         {
-            ConStr.Open();
-            SqlCommand cmd = ConStr.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "UPDATE Produtos SET Quantidade = Quantidade - '"+ int.Parse(txtQuantidade.Text) +"' WHERE Item = '" + comboBoxItem.SelectedItem + "'";
-            cmd.ExecuteNonQuery();
-            
+            try
+            {
+                ConStr.Open();
+                SqlCommand cmd = ConStr.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "UPDATE Produtos SET Quantidade = Quantidade - '" + int.Parse(txtQuantidade.Text) + "' WHERE Id_item = '" + int.Parse(txtIdtem.Text) + "'";
+                cmd.ExecuteNonQuery();
 
-            ConStr.Close();
+
+                ConStr.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
     }
 }

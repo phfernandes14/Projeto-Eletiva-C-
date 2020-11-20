@@ -122,21 +122,21 @@
             this.txtNome.Location = new System.Drawing.Point(187, 191);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
-            this.txtNome.TabIndex = 10;
+            this.txtNome.TabIndex = 0;
             // 
             // txtValorVenda
             // 
             this.txtValorVenda.Location = new System.Drawing.Point(187, 264);
             this.txtValorVenda.Name = "txtValorVenda";
             this.txtValorVenda.Size = new System.Drawing.Size(100, 20);
-            this.txtValorVenda.TabIndex = 12;
+            this.txtValorVenda.TabIndex = 2;
             // 
             // txtValorCompra
             // 
             this.txtValorCompra.Location = new System.Drawing.Point(187, 226);
             this.txtValorCompra.Name = "txtValorCompra";
             this.txtValorCompra.Size = new System.Drawing.Size(100, 20);
-            this.txtValorCompra.TabIndex = 13;
+            this.txtValorCompra.TabIndex = 1;
             // 
             // bttnCadastrar
             // 
@@ -145,7 +145,7 @@
             this.bttnCadastrar.Location = new System.Drawing.Point(187, 416);
             this.bttnCadastrar.Name = "bttnCadastrar";
             this.bttnCadastrar.Size = new System.Drawing.Size(116, 30);
-            this.bttnCadastrar.TabIndex = 21;
+            this.bttnCadastrar.TabIndex = 5;
             this.bttnCadastrar.Text = "Cadastrar";
             this.bttnCadastrar.UseVisualStyleBackColor = true;
             this.bttnCadastrar.Click += new System.EventHandler(this.bttnCadastrar_Click);
@@ -157,7 +157,7 @@
             this.bttnLimpar.Location = new System.Drawing.Point(371, 416);
             this.bttnLimpar.Name = "bttnLimpar";
             this.bttnLimpar.Size = new System.Drawing.Size(116, 30);
-            this.bttnLimpar.TabIndex = 22;
+            this.bttnLimpar.TabIndex = 6;
             this.bttnLimpar.Text = "Limpar";
             this.bttnLimpar.UseVisualStyleBackColor = true;
             this.bttnLimpar.Click += new System.EventHandler(this.bttnLimpar_Click);
@@ -195,18 +195,19 @@
             // 
             // comboBoxFornecedor
             // 
+            this.comboBoxFornecedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFornecedor.FormattingEnabled = true;
             this.comboBoxFornecedor.Location = new System.Drawing.Point(187, 337);
             this.comboBoxFornecedor.Name = "comboBoxFornecedor";
             this.comboBoxFornecedor.Size = new System.Drawing.Size(100, 21);
-            this.comboBoxFornecedor.TabIndex = 27;
+            this.comboBoxFornecedor.TabIndex = 4;
             // 
             // txtQuantidade
             // 
             this.txtQuantidade.Location = new System.Drawing.Point(186, 300);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(100, 20);
-            this.txtQuantidade.TabIndex = 29;
+            this.txtQuantidade.TabIndex = 3;
             // 
             // labelQuantidade
             // 

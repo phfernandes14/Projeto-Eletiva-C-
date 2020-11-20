@@ -83,21 +83,21 @@
             this.txtValorCompra.Location = new System.Drawing.Point(191, 275);
             this.txtValorCompra.Name = "txtValorCompra";
             this.txtValorCompra.Size = new System.Drawing.Size(100, 20);
-            this.txtValorCompra.TabIndex = 21;
+            this.txtValorCompra.TabIndex = 3;
             // 
             // txtValorVenda
             // 
             this.txtValorVenda.Location = new System.Drawing.Point(191, 313);
             this.txtValorVenda.Name = "txtValorVenda";
             this.txtValorVenda.Size = new System.Drawing.Size(100, 20);
-            this.txtValorVenda.TabIndex = 20;
+            this.txtValorVenda.TabIndex = 4;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(191, 240);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
-            this.txtNome.TabIndex = 18;
+            this.txtNome.TabIndex = 2;
             // 
             // labelValorCompra
             // 
@@ -193,7 +193,7 @@
             this.bttnLimpar.Location = new System.Drawing.Point(320, 452);
             this.bttnLimpar.Name = "bttnLimpar";
             this.bttnLimpar.Size = new System.Drawing.Size(116, 30);
-            this.bttnLimpar.TabIndex = 29;
+            this.bttnLimpar.TabIndex = 8;
             this.bttnLimpar.Text = "Limpar";
             this.bttnLimpar.UseVisualStyleBackColor = true;
             this.bttnLimpar.Click += new System.EventHandler(this.bttnLimpar_Click);
@@ -206,34 +206,36 @@
             this.bttnSalvar.Location = new System.Drawing.Point(166, 452);
             this.bttnSalvar.Name = "bttnSalvar";
             this.bttnSalvar.Size = new System.Drawing.Size(116, 30);
-            this.bttnSalvar.TabIndex = 28;
+            this.bttnSalvar.TabIndex = 7;
             this.bttnSalvar.Text = "Salvar";
             this.bttnSalvar.UseVisualStyleBackColor = false;
             this.bttnSalvar.Click += new System.EventHandler(this.bttnSalvar_Click);
             // 
             // comboProdutoEditar
             // 
+            this.comboProdutoEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboProdutoEditar.FormattingEnabled = true;
             this.comboProdutoEditar.Location = new System.Drawing.Point(345, 151);
             this.comboProdutoEditar.Name = "comboProdutoEditar";
             this.comboProdutoEditar.Size = new System.Drawing.Size(121, 21);
-            this.comboProdutoEditar.TabIndex = 30;
+            this.comboProdutoEditar.TabIndex = 0;
             this.comboProdutoEditar.SelectedIndexChanged += new System.EventHandler(this.comboProdutoEditar_SelectedIndexChanged);
             // 
             // comboBoxFornecedor
             // 
+            this.comboBoxFornecedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFornecedor.FormattingEnabled = true;
             this.comboBoxFornecedor.Location = new System.Drawing.Point(191, 382);
             this.comboBoxFornecedor.Name = "comboBoxFornecedor";
             this.comboBoxFornecedor.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxFornecedor.TabIndex = 31;
+            this.comboBoxFornecedor.TabIndex = 6;
             // 
             // txtQuantidade
             // 
             this.txtQuantidade.Location = new System.Drawing.Point(191, 352);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(100, 20);
-            this.txtQuantidade.TabIndex = 33;
+            this.txtQuantidade.TabIndex = 5;
             // 
             // labelQuantidade
             // 
@@ -253,7 +255,7 @@
             this.button1.Location = new System.Drawing.Point(473, 452);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 30);
-            this.button1.TabIndex = 34;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Apagar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -264,7 +266,7 @@
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 36;
+            this.txtId.TabIndex = 1;
             // 
             // label3
             // 

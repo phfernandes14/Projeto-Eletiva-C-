@@ -87,7 +87,7 @@
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Rotation = 0D;
             this.iconButton1.Size = new System.Drawing.Size(180, 35);
-            this.iconButton1.TabIndex = 5;
+            this.iconButton1.TabIndex = 2;
             this.iconButton1.Text = "    Produtos";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             this.iconButtonEditarFornecedor.Name = "iconButtonEditarFornecedor";
             this.iconButtonEditarFornecedor.Rotation = 0D;
             this.iconButtonEditarFornecedor.Size = new System.Drawing.Size(168, 28);
-            this.iconButtonEditarFornecedor.TabIndex = 5;
+            this.iconButtonEditarFornecedor.TabIndex = 0;
             this.iconButtonEditarFornecedor.Text = "    Editar Fornecedor";
             this.iconButtonEditarFornecedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonEditarFornecedor.UseVisualStyleBackColor = true;
@@ -145,8 +145,8 @@
             this.iconButtonEditarPreco.Name = "iconButtonEditarPreco";
             this.iconButtonEditarPreco.Rotation = 0D;
             this.iconButtonEditarPreco.Size = new System.Drawing.Size(168, 28);
-            this.iconButtonEditarPreco.TabIndex = 4;
-            this.iconButtonEditarPreco.Text = "    Editar Preço";
+            this.iconButtonEditarPreco.TabIndex = 3;
+            this.iconButtonEditarPreco.Text = "    Editar Produto";
             this.iconButtonEditarPreco.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonEditarPreco.UseVisualStyleBackColor = true;
             this.iconButtonEditarPreco.Click += new System.EventHandler(this.iconButtonEditarPreco_Click);
@@ -167,7 +167,7 @@
             this.iconButtonCasdastrarFornecedor.Name = "iconButtonCasdastrarFornecedor";
             this.iconButtonCasdastrarFornecedor.Rotation = 0D;
             this.iconButtonCasdastrarFornecedor.Size = new System.Drawing.Size(168, 28);
-            this.iconButtonCasdastrarFornecedor.TabIndex = 3;
+            this.iconButtonCasdastrarFornecedor.TabIndex = 2;
             this.iconButtonCasdastrarFornecedor.Text = "  Cadastrar Fornecedor";
             this.iconButtonCasdastrarFornecedor.UseVisualStyleBackColor = true;
             this.iconButtonCasdastrarFornecedor.Click += new System.EventHandler(this.iconButton2_Click);
@@ -188,7 +188,7 @@
             this.iconButtonCadastarProduto.Name = "iconButtonCadastarProduto";
             this.iconButtonCadastarProduto.Rotation = 0D;
             this.iconButtonCadastarProduto.Size = new System.Drawing.Size(168, 28);
-            this.iconButtonCadastarProduto.TabIndex = 0;
+            this.iconButtonCadastarProduto.TabIndex = 1;
             this.iconButtonCadastarProduto.Text = "Cadastrar Produto";
             this.iconButtonCadastarProduto.UseVisualStyleBackColor = true;
             this.iconButtonCadastarProduto.Click += new System.EventHandler(this.iconButtonAdicionarProduto_Click);
@@ -209,7 +209,7 @@
             this.iconButtonHome.Name = "iconButtonHome";
             this.iconButtonHome.Rotation = 0D;
             this.iconButtonHome.Size = new System.Drawing.Size(180, 35);
-            this.iconButtonHome.TabIndex = 3;
+            this.iconButtonHome.TabIndex = 0;
             this.iconButtonHome.Text = "    Inicio";
             this.iconButtonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonHome.UseVisualStyleBackColor = true;
@@ -245,7 +245,7 @@
             this.iconButtonAdministrador.Name = "iconButtonAdministrador";
             this.iconButtonAdministrador.Rotation = 0D;
             this.iconButtonAdministrador.Size = new System.Drawing.Size(180, 36);
-            this.iconButtonAdministrador.TabIndex = 2;
+            this.iconButtonAdministrador.TabIndex = 4;
             this.iconButtonAdministrador.Text = "    Administrador";
             this.iconButtonAdministrador.UseVisualStyleBackColor = true;
             this.iconButtonAdministrador.Click += new System.EventHandler(this.iconButtonAdministrador_Click);
@@ -266,7 +266,7 @@
             this.iconButtonRelatorio.Name = "iconButtonRelatorio";
             this.iconButtonRelatorio.Rotation = 0D;
             this.iconButtonRelatorio.Size = new System.Drawing.Size(180, 35);
-            this.iconButtonRelatorio.TabIndex = 1;
+            this.iconButtonRelatorio.TabIndex = 3;
             this.iconButtonRelatorio.Text = "Relatórios";
             this.iconButtonRelatorio.UseVisualStyleBackColor = true;
             this.iconButtonRelatorio.Click += new System.EventHandler(this.iconButtonRelatorio_Click);
@@ -287,7 +287,7 @@
             this.iconButtonVenda.Name = "iconButtonVenda";
             this.iconButtonVenda.Rotation = 0D;
             this.iconButtonVenda.Size = new System.Drawing.Size(180, 35);
-            this.iconButtonVenda.TabIndex = 0;
+            this.iconButtonVenda.TabIndex = 1;
             this.iconButtonVenda.Text = "    Vendas";
             this.iconButtonVenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonVenda.UseVisualStyleBackColor = true;
@@ -383,7 +383,7 @@
         private System.Windows.Forms.Label labelTxtBemVindo;
         private System.Windows.Forms.Label labelBemVindo;
         private FontAwesome.Sharp.IconButton iconButtonHome;
-        private System.Windows.Forms.Panel panelSubMenu;
+        public System.Windows.Forms.Panel panelSubMenu;
         private FontAwesome.Sharp.IconButton iconButtonEditarPreco;
         private FontAwesome.Sharp.IconButton iconButtonCasdastrarFornecedor;
         private FontAwesome.Sharp.IconButton iconButtonCadastarProduto;

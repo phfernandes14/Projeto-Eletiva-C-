@@ -164,7 +164,7 @@
             this.txtCNPJ.Location = new System.Drawing.Point(182, 172);
             this.txtCNPJ.Name = "txtCNPJ";
             this.txtCNPJ.Size = new System.Drawing.Size(219, 26);
-            this.txtCNPJ.TabIndex = 10;
+            this.txtCNPJ.TabIndex = 0;
             // 
             // txtEndereco
             // 
@@ -172,7 +172,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(182, 379);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(219, 26);
-            this.txtEndereco.TabIndex = 11;
+            this.txtEndereco.TabIndex = 6;
             // 
             // txtRamo
             // 
@@ -180,7 +180,7 @@
             this.txtRamo.Location = new System.Drawing.Point(182, 344);
             this.txtRamo.Name = "txtRamo";
             this.txtRamo.Size = new System.Drawing.Size(219, 26);
-            this.txtRamo.TabIndex = 12;
+            this.txtRamo.TabIndex = 5;
             // 
             // txtNatureza
             // 
@@ -188,7 +188,7 @@
             this.txtNatureza.Location = new System.Drawing.Point(182, 309);
             this.txtNatureza.Name = "txtNatureza";
             this.txtNatureza.Size = new System.Drawing.Size(219, 26);
-            this.txtNatureza.TabIndex = 13;
+            this.txtNatureza.TabIndex = 4;
             // 
             // txtInsMunicipal
             // 
@@ -196,7 +196,7 @@
             this.txtInsMunicipal.Location = new System.Drawing.Point(182, 275);
             this.txtInsMunicipal.Name = "txtInsMunicipal";
             this.txtInsMunicipal.Size = new System.Drawing.Size(219, 26);
-            this.txtInsMunicipal.TabIndex = 14;
+            this.txtInsMunicipal.TabIndex = 3;
             // 
             // txtInsEstadual
             // 
@@ -204,7 +204,7 @@
             this.txtInsEstadual.Location = new System.Drawing.Point(182, 239);
             this.txtInsEstadual.Name = "txtInsEstadual";
             this.txtInsEstadual.Size = new System.Drawing.Size(219, 26);
-            this.txtInsEstadual.TabIndex = 15;
+            this.txtInsEstadual.TabIndex = 2;
             // 
             // txtRazao
             // 
@@ -212,7 +212,7 @@
             this.txtRazao.Location = new System.Drawing.Point(182, 204);
             this.txtRazao.Name = "txtRazao";
             this.txtRazao.Size = new System.Drawing.Size(219, 26);
-            this.txtRazao.TabIndex = 16;
+            this.txtRazao.TabIndex = 1;
             // 
             // bttnCadastrar
             // 
@@ -222,7 +222,7 @@
             this.bttnCadastrar.Location = new System.Drawing.Point(524, 204);
             this.bttnCadastrar.Name = "bttnCadastrar";
             this.bttnCadastrar.Size = new System.Drawing.Size(116, 30);
-            this.bttnCadastrar.TabIndex = 19;
+            this.bttnCadastrar.TabIndex = 9;
             this.bttnCadastrar.Text = "Cadastrar";
             this.bttnCadastrar.UseVisualStyleBackColor = false;
             this.bttnCadastrar.Click += new System.EventHandler(this.bttnCadastrar_Click);
@@ -234,7 +234,7 @@
             this.bttnLimpar.Location = new System.Drawing.Point(524, 247);
             this.bttnLimpar.Name = "bttnLimpar";
             this.bttnLimpar.Size = new System.Drawing.Size(116, 30);
-            this.bttnLimpar.TabIndex = 20;
+            this.bttnLimpar.TabIndex = 10;
             this.bttnLimpar.Text = "Limpar";
             this.bttnLimpar.UseVisualStyleBackColor = true;
             // 
@@ -312,7 +312,7 @@
             this.txtEmail.Location = new System.Drawing.Point(182, 448);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(219, 26);
-            this.txtEmail.TabIndex = 28;
+            this.txtEmail.TabIndex = 8;
             // 
             // txtTelefone
             // 
@@ -320,7 +320,7 @@
             this.txtTelefone.Location = new System.Drawing.Point(182, 413);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(219, 26);
-            this.txtTelefone.TabIndex = 29;
+            this.txtTelefone.TabIndex = 7;
             // 
             // label3
             // 

@@ -31,24 +31,30 @@ namespace ProjetoEletivaCSharp
 
         private void preencherComboBox()
         {
-            comboBoxFornecedorEditar.Items.Clear();
-
-            ConStr.Open();
-            SqlCommand cmd = ConStr.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT Razao_social FROM Fornecedores";
-            cmd.ExecuteNonQuery();
-            SqlDataReader reader;
-
-            reader = cmd.ExecuteReader();
-
-            while(reader.Read())
+            try
             {
-                comboBoxFornecedorEditar.Items.Add(reader.GetString(0));
+                comboBoxFornecedorEditar.Items.Clear();
+
+                ConStr.Open();
+                SqlCommand cmd = ConStr.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT Razao_social FROM Fornecedores";
+                cmd.ExecuteNonQuery();
+                SqlDataReader reader;
+
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    comboBoxFornecedorEditar.Items.Add(reader.GetString(0));
+                }
+
+                ConStr.Close();
             }
-
-            ConStr.Close();
-
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
 
         private void comboBoxFornecedorEditar_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,41 +64,55 @@ namespace ProjetoEletivaCSharp
 
         private void autoCompletar()
         {
-            ConStr.Open();
-            SqlCommand cmd = ConStr.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM Fornecedores WHERE Razao_social = '" + comboBoxFornecedorEditar.SelectedItem.ToString() + "'";
-            cmd.ExecuteNonQuery();
-            SqlDataReader reader;
-
-            reader = cmd.ExecuteReader();
-            if (reader.Read())
+            try
             {
+                ConStr.Open();
+                SqlCommand cmd = ConStr.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM Fornecedores WHERE Razao_social = '" + comboBoxFornecedorEditar.SelectedItem.ToString() + "'";
+                cmd.ExecuteNonQuery();
+                SqlDataReader reader;
 
-                txtCNPJ.Text = reader.GetInt32(0).ToString();
-                txtRazao.Text = reader.GetString(1);
-                txtInsEstadual.Text = reader.GetInt32(2).ToString();
-                txtInsMunicipal.Text = reader.GetInt32(3).ToString();
-                txtNatureza.Text = reader.GetString(4);
-                txtRamo.Text = reader.GetString(5);
-                txtEndereco.Text = reader.GetString(6);
-                txtEmail.Text = reader.GetString(7);
-                txtTelefone.Text = reader.GetInt32(8).ToString();
+                reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+
+                    txtCNPJ.Text = reader.GetInt32(0).ToString();
+                    txtRazao.Text = reader.GetString(1);
+                    txtInsEstadual.Text = reader.GetInt32(2).ToString();
+                    txtInsMunicipal.Text = reader.GetInt32(3).ToString();
+                    txtNatureza.Text = reader.GetString(4);
+                    txtRamo.Text = reader.GetString(5);
+                    txtEndereco.Text = reader.GetString(6);
+                    txtEmail.Text = reader.GetString(7);
+                    txtTelefone.Text = reader.GetInt32(8).ToString();
 
 
+                }
+                ConStr.Close();
             }
-            ConStr.Close();
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
 
         private void updateFornecedor()
         {
-            ConStr.Open();
-            SqlCommand cmd = ConStr.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "UPDATE Fornecedores SET CNPJ = '"+ int.Parse(txtCNPJ.Text) +"', Razao_social = '"+ txtRazao.Text + "', inscri_estadual ='" + int.Parse(txtInsEstadual.Text) +"', insc_municipal = '"+ int.Parse(txtInsMunicipal.Text) + "', Natureza_juridica = '" + txtNatureza.Text + "', Ramo_negocio = '" + txtRamo.Text + "', Endereco = '" + txtEndereco.Text + "', Email = '" + txtEndereco.Text + "', Telefone = '" + int.Parse(txtTelefone.Text) +"' WHERE Razao_social = '"+ comboBoxFornecedorEditar.SelectedItem.ToString() +"'";
-            cmd.ExecuteNonQuery();
-            
-            ConStr.Close();
+            try
+            {
+                ConStr.Open();
+                SqlCommand cmd = ConStr.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "UPDATE Fornecedores SET CNPJ = '" + int.Parse(txtCNPJ.Text) + "', Razao_social = '" + txtRazao.Text + "', inscri_estadual ='" + int.Parse(txtInsEstadual.Text) + "', insc_municipal = '" + int.Parse(txtInsMunicipal.Text) + "', Natureza_juridica = '" + txtNatureza.Text + "', Ramo_negocio = '" + txtRamo.Text + "', Endereco = '" + txtEndereco.Text + "', Email = '" + txtEndereco.Text + "', Telefone = '" + int.Parse(txtTelefone.Text) + "' WHERE Razao_social = '" + comboBoxFornecedorEditar.SelectedItem.ToString() + "'";
+                cmd.ExecuteNonQuery();
+
+                ConStr.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
 
         private void deleteFornecedor()
@@ -115,26 +135,40 @@ namespace ProjetoEletivaCSharp
 
         private void btnApagar_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Deseja excluir este produto?", "Confirmação", MessageBoxButtons.YesNo))
+            try
             {
-                deleteFornecedor();
-                Limpar();
-                preencherComboBox();
+                if (DialogResult.Yes == MessageBox.Show("Deseja excluir este produto?", "Confirmação", MessageBoxButtons.YesNo))
+                {
+                    deleteFornecedor();
+                    Limpar();
+                    preencherComboBox();
 
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
             }
         }
 
         private void Limpar()
         {
-            txtCNPJ.Clear();
-            txtRazao.Clear();
-            txtInsEstadual.Clear();
-            txtInsMunicipal.Clear();
-            txtNatureza.Clear();
-            txtRamo.Clear();
-            txtEndereco.Clear();
-            txtEmail.Clear();
-            txtTelefone.Clear();
+            try
+            {
+                txtCNPJ.Clear();
+                txtRazao.Clear();
+                txtInsEstadual.Clear();
+                txtInsMunicipal.Clear();
+                txtNatureza.Clear();
+                txtRamo.Clear();
+                txtEndereco.Clear();
+                txtEmail.Clear();
+                txtTelefone.Clear();
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
     }
 }

@@ -53,6 +53,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblValorUnitario = new System.Windows.Forms.Label();
             this.btnTroco = new System.Windows.Forms.Button();
+            this.txtIdtem = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.flowLayoutPanelAviso.SuspendLayout();
@@ -64,7 +66,7 @@
             this.txtQuantidade.Location = new System.Drawing.Point(169, 264);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(100, 26);
-            this.txtQuantidade.TabIndex = 5;
+            this.txtQuantidade.TabIndex = 2;
             this.txtQuantidade.TextChanged += new System.EventHandler(this.txtQuantidade_TextChanged);
             // 
             // lbl_quantidade
@@ -128,7 +130,7 @@
             this.bttnLimpar.Location = new System.Drawing.Point(467, 449);
             this.bttnLimpar.Name = "bttnLimpar";
             this.bttnLimpar.Size = new System.Drawing.Size(116, 30);
-            this.bttnLimpar.TabIndex = 26;
+            this.bttnLimpar.TabIndex = 6;
             this.bttnLimpar.Text = "Limpar";
             this.bttnLimpar.UseVisualStyleBackColor = true;
             this.bttnLimpar.Click += new System.EventHandler(this.bttnLimpar_Click);
@@ -141,7 +143,7 @@
             this.bttnRegistrar.Location = new System.Drawing.Point(132, 449);
             this.bttnRegistrar.Name = "bttnRegistrar";
             this.bttnRegistrar.Size = new System.Drawing.Size(116, 30);
-            this.bttnRegistrar.TabIndex = 25;
+            this.bttnRegistrar.TabIndex = 4;
             this.bttnRegistrar.Text = "Registrar";
             this.bttnRegistrar.UseVisualStyleBackColor = false;
             this.bttnRegistrar.Click += new System.EventHandler(this.bttnRegistrar_Click);
@@ -216,7 +218,7 @@
             this.txtPago.Location = new System.Drawing.Point(169, 304);
             this.txtPago.Name = "txtPago";
             this.txtPago.Size = new System.Drawing.Size(100, 26);
-            this.txtPago.TabIndex = 30;
+            this.txtPago.TabIndex = 3;
             // 
             // label5
             // 
@@ -264,7 +266,7 @@
             // 
             this.lblEstoque.AutoSize = true;
             this.lblEstoque.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
-            this.lblEstoque.Location = new System.Drawing.Point(178, 184);
+            this.lblEstoque.Location = new System.Drawing.Point(178, 226);
             this.lblEstoque.Name = "lblEstoque";
             this.lblEstoque.Size = new System.Drawing.Size(18, 19);
             this.lblEstoque.TabIndex = 32;
@@ -274,7 +276,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
-            this.label7.Location = new System.Drawing.Point(71, 184);
+            this.label7.Location = new System.Drawing.Point(71, 226);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 19);
             this.label7.TabIndex = 33;
@@ -282,18 +284,19 @@
             // 
             // comboBoxItem
             // 
+            this.comboBoxItem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxItem.FormattingEnabled = true;
             this.comboBoxItem.Location = new System.Drawing.Point(169, 151);
             this.comboBoxItem.Name = "comboBoxItem";
             this.comboBoxItem.Size = new System.Drawing.Size(100, 21);
-            this.comboBoxItem.TabIndex = 34;
+            this.comboBoxItem.TabIndex = 0;
             this.comboBoxItem.SelectedIndexChanged += new System.EventHandler(this.comboBoxItem_SelectedIndexChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
-            this.label8.Location = new System.Drawing.Point(71, 227);
+            this.label8.Location = new System.Drawing.Point(225, 226);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 19);
             this.label8.TabIndex = 36;
@@ -303,7 +306,7 @@
             // 
             this.lblValorUnitario.AutoSize = true;
             this.lblValorUnitario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
-            this.lblValorUnitario.Location = new System.Drawing.Point(178, 227);
+            this.lblValorUnitario.Location = new System.Drawing.Point(332, 226);
             this.lblValorUnitario.Name = "lblValorUnitario";
             this.lblValorUnitario.Size = new System.Drawing.Size(18, 19);
             this.lblValorUnitario.TabIndex = 35;
@@ -317,10 +320,29 @@
             this.btnTroco.Location = new System.Drawing.Point(301, 449);
             this.btnTroco.Name = "btnTroco";
             this.btnTroco.Size = new System.Drawing.Size(126, 30);
-            this.btnTroco.TabIndex = 37;
+            this.btnTroco.TabIndex = 5;
             this.btnTroco.Text = "Calcular Troco";
             this.btnTroco.UseVisualStyleBackColor = false;
             this.btnTroco.Click += new System.EventHandler(this.btnTroco_Click);
+            // 
+            // txtIdtem
+            // 
+            this.txtIdtem.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtIdtem.Location = new System.Drawing.Point(169, 189);
+            this.txtIdtem.Name = "txtIdtem";
+            this.txtIdtem.ReadOnly = true;
+            this.txtIdtem.Size = new System.Drawing.Size(100, 26);
+            this.txtIdtem.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic);
+            this.label9.Location = new System.Drawing.Point(71, 192);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 19);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "Id do Item";
             // 
             // FormRegistroVenda
             // 
@@ -328,6 +350,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(721, 529);
+            this.Controls.Add(this.txtIdtem);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnTroco);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblValorUnitario);
@@ -385,5 +409,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblValorUnitario;
         private System.Windows.Forms.Button btnTroco;
+        private System.Windows.Forms.TextBox txtIdtem;
+        private System.Windows.Forms.Label label9;
     }
 }

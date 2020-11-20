@@ -20,18 +20,25 @@ namespace ProjetoEletivaCSharp
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
-            if (activeForm != null)
+            try
             {
-                activeForm.Close();
+                if (activeForm != null)
+                {
+                    activeForm.Close();
+                }
+                activeForm = childForm;
+                childForm.TopLevel = false;
+                childForm.FormBorderStyle = FormBorderStyle.None;
+                childForm.Dock = DockStyle.Fill;
+                panelChildForm.Controls.Add(childForm);
+                panelChildForm.Tag = childForm;
+                childForm.BringToFront();
+                childForm.Show();
             }
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
+            catch
+            {
+                MessageBox.Show("Algo deu errado");
+            }
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -46,14 +53,27 @@ namespace ProjetoEletivaCSharp
 
         private void iconButtonAdministrador_Click(object sender, EventArgs e)
         {
-            if(panelSubMenu.Visible == true)
+            try
             {
-                panelSubMenu.Visible = false;
+                FormLoginAdministrador formAdm = new FormLoginAdministrador();
+                formAdm.Owner = this;
+
+                if (panelSubMenu.Visible == false)
+                {
+                    formAdm.Show();
+
+                }
+                else
+                {
+                    panelSubMenu.Visible = false;
+                }
             }
-            else
+            catch
             {
-                panelSubMenu.Visible = true;
+                MessageBox.Show("Algo deu errado");
             }
+
+
         }
 
         private void iconButtonAdicionarProduto_Click(object sender, EventArgs e)
@@ -93,5 +113,7 @@ namespace ProjetoEletivaCSharp
         {
             openChildForm(new FormRelatórios());
         }
+
+        
     }
 }
